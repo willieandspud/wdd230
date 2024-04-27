@@ -1,0 +1,37 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by this | */
+@font-face {
+    font-family: "Tallboy";
+    src: url('https://fonts.google.com/specimen/Josefin+Sans') format('woff');
+  }
+  
+  @font-face {
+    font-family: "Workman";
+    src: url('https://raw.githubusercontent.com/willieandspud/wdd130/main/denim/fonts/Work.woff') format('woff');
+  }
+  
+    
+  :root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #F4F1EA   ;
+    --secondary-color: #373737 ;
+    --accent1-color: #648075;
+    --accent2-color: #9BB1BF;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Tallboy";
+    --paragraph-font: "Workman", sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+    --headline-color-on-color: #f2f0ea; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #f2f0ea; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #396E94  ;
+    --nav-link-color: #396E94;
+    --nav-background-color: #D4AC0D;
+    --nav-hover-link-color: #f2f0ea;
+    --nav-hover-background-color: #396E94;
+  }
+  
