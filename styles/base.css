@@ -15,7 +15,7 @@ header {
 nav {
     background-color: #343635; /* Set background color for the nav section */
     color: #f2f2f3; /* Set text color to white */
-    width: 80%; /* Match the width of the main background */
+    width: 63%; /* Match the width of the main background */
     margin: 0 auto; /* Center the nav section horizontally */
     padding: 10px; /* Add padding */
     text-align: center; /* Center the content of the nav element */
@@ -34,7 +34,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #343635;
+    color: #f2f2f3;
 }
 
 main {
