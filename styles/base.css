@@ -12,7 +12,7 @@ header {
 .personal-info {
     background-color: #d9923b;
     color: #f2f2f3;
-    width: 80%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -30,7 +30,7 @@ header {
 nav {
     background-color: #343635;
     color: #f2f2f3;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
     text-align: center; 
@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 main {
-    width: 80%; 
+    width: 100%; 
     margin: 0 auto;
     padding: 20px;
     display: flex; 
@@ -64,7 +64,7 @@ main {
 }
 
 .card-wrapper {
-    width: 80%;
+    width: 100%;
     border: 2px solid #83949c;
     margin-bottom: 20px; 
 }
