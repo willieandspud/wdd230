@@ -12,21 +12,20 @@ header {
 .personal-info {
     background-color: #d9923b;
     color: #f2f2f3;
-    width: 63%;
+    width: 65%;
     text-align: center;
+    margin: 0 auto;
 }
 .personal-info img {
-    width: 150px; /* Adjust width of the photo */
-    border-radius: 50%; /* Make the photo round */
-    margin-left: 10px; /* Add space between the name and the photo */
-    vertical-align: middle; /* Align the photo vertically with the name */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect to the photo */
+    width: 75px;
+    margin-left: 10px; 
+    vertical-align: middle;
+    padding: 10px;
 }
 .personal-info h1 {
-    font-size: 24px; /* Adjust font size for your name */
-    display: inline; /* Display the name inline with the photo */
+    font-size: 24px;
+    display: inline;
 }
-
 
 nav {
     background-color: #343635;
