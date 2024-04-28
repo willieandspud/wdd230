@@ -9,6 +9,24 @@ header {
     color: #f2f2f3;
     padding: 10px;
 }
+.personal-info {
+    background-color: #d9923b;
+    color: #f2f2f3;
+    width: 63%;
+    text-align: center;
+}
+.personal-info img {
+    width: 150px; /* Adjust width of the photo */
+    border-radius: 50%; /* Make the photo round */
+    margin-left: 10px; /* Add space between the name and the photo */
+    vertical-align: middle; /* Align the photo vertically with the name */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect to the photo */
+}
+.personal-info h1 {
+    font-size: 24px; /* Adjust font size for your name */
+    display: inline; /* Display the name inline with the photo */
+}
+
 
 nav {
     background-color: #343635;
