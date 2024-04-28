@@ -1,9 +1,7 @@
-/* styles.css */
-
 body {
     font-family: 'Josefin Sans', sans-serif; /* Apply Josefin Sans font to the whole document */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -13,12 +11,13 @@ header {
 }
 
 nav {
-    background-color: #343635; /* Set background color for the nav section */
-    color: #f2f2f3; /* Set text color to white */
-    width: 63%; /* Match the width of the main background */
-    margin: 0 auto; /* Center the nav section horizontally */
-    padding: 10px; /* Add padding */
-    text-align: center; /* Center the content of the nav element */
+    background-color: #343635;
+    color: #f2f2f3;
+    width: 63%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center; 
+    font-size: 18px;
 }
 
 nav ul {
@@ -29,7 +28,7 @@ nav ul {
 
 nav ul li {
     display: block; /* Display list items vertically */
-    margin-bottom: 10px; /* Add margin between list items */
+    margin-bottom: 10px; 
 }
 
 nav ul li a {
@@ -38,19 +37,19 @@ nav ul li a {
 }
 
 main {
-    width: 80%; /* Limited width for the main element */
-    margin: 0 auto; /* Center the main element horizontally */
+    width: 80%; 
+    margin: 0 auto;
     padding: 20px;
-    display: flex; /* Use Flexbox for layout */
+    display: flex; 
     flex-direction: column; /* Arrange items in a single column */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text horizontally */
+    align-items: center;
+    text-align: center;
 }
 
 .card-wrapper {
-    width: 80%; /* Set the width of the card wrapper */
-    border: 1px solid #83949c; /* Add thin border around the card wrapper */
-    margin-bottom: 20px; /* Add margin between card wrappers */
+    width: 80%;
+    border: 2px solid #83949c;
+    margin-bottom: 20px; 
 }
 
 .card {
