@@ -64,6 +64,7 @@
         text-align: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-gap: 1rem;
     }
     
@@ -71,6 +72,12 @@
         width: 80%;
         border: 2px solid #83949c;
         margin-bottom: 20px; 
+    }
+    .card-contain {
+        grid-row: 1/2;
+    }
+    .card-wrapper {
+        grid-row: 2/3;
     }
     
     .card {
