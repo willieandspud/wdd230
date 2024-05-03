@@ -8,6 +8,9 @@ header {
     background-color: #343635;
     color: #f2f2f3;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .personal-info {
     background-color: #d9923b;
@@ -47,6 +50,15 @@ nav ul li {
     display: block; /* Display list items vertically */
     margin-bottom: 10px; 
 }
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a :hover {
+    border: 1px solid #fff;
+}
 
 nav ul li a {
     text-decoration: none;
@@ -61,12 +73,18 @@ main {
     flex-direction: column; /* Arrange items in a single column */
     align-items: center;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
 }
 
 .card-wrapper {
     width: 80%;
+    margin: 0 10px;
     border: 2px solid #83949c;
     margin-bottom: 20px; 
+    flex: 1;
+    box-sizing: border-box;
 }
 
 .card {
@@ -88,4 +106,27 @@ footer img {
 }
 h2 {
     text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .card-contain {
+        grid-row: 1/2;
+    }
+    .card-wrapper {
+        grid-row: 2/3;
+    }
+    
 }

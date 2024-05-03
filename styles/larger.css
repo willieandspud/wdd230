@@ -1,0 +1,103 @@
+@media screen and (min-width: 500px) {
+    body {
+        font-family: 'Josefin Sans', sans-serif; /* Apply Josefin Sans font to the whole document */
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #343635;
+        color: #f2f2f3;
+        padding: 10px;
+    }
+    .personal-info {
+        background-color: #d9923b;
+        color: #f2f2f3;
+        width: 81%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .personal-info img {
+        width: 75px;
+        margin-left: 10px; 
+        vertical-align: middle;
+        padding: 10px;
+    }
+    .personal-info h1 {
+        font-size: 24px;
+        display: inline;
+    }
+    
+    nav {
+        background-color: #343635;
+        color: #f2f2f3;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center; 
+        font-size: 18px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: block; /* Display list items vertically */
+        margin-bottom: 10px; 
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #f2f2f3;
+    }
+    
+    main {
+        width: 80%; 
+        margin: 0 auto;
+        padding: 20px;
+        display: flex; 
+        flex-direction: column; /* Arrange items in a single column */
+        align-items: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    
+    .card-wrapper {
+        width: 80%;
+        border: 2px solid #83949c;
+        margin-bottom: 20px; 
+    }
+    
+    .card {
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+    
+    footer {
+        background-color: #343635;
+        color: #f2f2f3;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    footer img {
+        height: 20px;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    h2 {
+        text-decoration: underline;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}    
