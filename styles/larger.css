@@ -79,6 +79,12 @@
     .card-wrapper {
         grid-row: 2/3;
     }
+    .card-wrapper h3 {
+        text-align: center;
+        background-color: #d9a79d;
+        padding: 1rem;
+        border-radius: 5px 5px 0 0;
+    }
     
     .card {
         background-color: #f9f9f9;

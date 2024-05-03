@@ -79,7 +79,9 @@ main {
 }
 
 .card-wrapper {
-    width: 80%;
+    width: 100%;
+    box-shadow: 4px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
     margin: 0 10px;
     border: 2px solid #2d465a;
     margin-bottom: 20px; 
@@ -106,6 +108,12 @@ footer img {
 }
 h2 {
     text-decoration: underline;
+}
+.card-wrapper h3 {
+    text-align: center;
+    background-color: #d9a79d;
+    padding: 1rem;
+    border-radius: 5px 5px 0 0;
 }
 
 @media (min-width: 760px) {
