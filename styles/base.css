@@ -15,7 +15,7 @@ header {
 .personal-info {
     background-color: #723223;
     color: #f2f2f3;
-    width: 81%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -33,7 +33,7 @@ header {
 nav {
     background-color: #343635;
     color: #f2f2f3;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
     text-align: center; 
