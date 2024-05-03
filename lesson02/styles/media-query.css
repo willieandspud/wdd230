@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 640x;
+	margin: 1rem auto;
+    border: 1px #1a1f23;
+    padding: 20px;
+    background-color: #bedef1;
+}
+section {
+    padding: 20px;
+    background-color: #ffff;
+}
