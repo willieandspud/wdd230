@@ -11,7 +11,12 @@ footer {
     padding: 20px;
     background-color: #bedef1;
 }
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
 section {
-    padding: 20px;
+    padding: 10px;
     background-color: #ffff;
 }
