@@ -88,7 +88,7 @@
         text-align: center;
         background-color: #d9a79d;
         padding: 1rem 1rem;
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 10px 10px;
         flex: 1;
     }
     
