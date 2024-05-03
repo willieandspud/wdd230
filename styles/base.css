@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    background-color: #343635;
     color: #f2f2f3;
     padding: 10px;
     display: flex;
@@ -113,6 +112,7 @@ h2 {
 .card-wrapper h3 {
     text-align: center;
     background-color: #d9a79d;
+    color: #f2f2f3;
     flex: 1;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 3px 6px #262521;
