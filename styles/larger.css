@@ -112,7 +112,8 @@
         margin-left: 5px;
     }
     h2 {
-        text-decoration: underline;
+        border-bottom: 1px #2d465a;
+        color: #343635;
     }
     nav ul {
         display: flex;
