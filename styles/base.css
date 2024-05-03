@@ -81,7 +81,7 @@ main {
 .card-wrapper {
     width: 100%;
     box-shadow: 4px 5px 10px #262521;
-    border-radius: 30px;
+    border-radius: 15px;
     margin: 0 10px;
     border: 3px solid #2d465a;
     margin-bottom: 20px; 
@@ -113,6 +113,8 @@ h2 {
     text-align: center;
     background-color: #d9a79d;
     flex: 1;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 3px 6px #262521;
 }
 
 @media (min-width: 760px) {
