@@ -5,6 +5,7 @@ body {
 }
 
 header {
+
     color: #f2f2f3;
     padding: 10px;
     display: flex;
@@ -107,7 +108,7 @@ footer img {
     margin-left: 5px;
 }
 h2 {
-    border-bottom: 1px #2d465a;
+    text-decoration: underline;
     color: #343635;
 }
 .card-wrapper h3 {
