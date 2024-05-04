@@ -54,6 +54,7 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+   
 }
 nav a :hover {
     border: 1px solid #fff;

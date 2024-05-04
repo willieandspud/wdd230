@@ -122,4 +122,8 @@
     nav ul li {
         flex: 1 1 100%;
     }
+
+    nav a {
+        vertical-align: middle;
+    }
 }    
