@@ -1,4 +1,4 @@
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
 main {
     grid-template-columns: 1fr;
     grid-gap: 20px 0;
