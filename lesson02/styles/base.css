@@ -54,6 +54,21 @@ section {
     opacity: 1.0;
     padding: 0;
 }
+.cloud2 {
+    position: absolute;
+    top: 270px;
+    left: 1100px;
+    opacity: 1.0;
+    padding: 0; 
+}
+.cloud3 {
+    position: absolute;
+    top: 750px;
+    left: 150px;
+    opacity: 1.0;
+    padding: 0;
+    z-index: 1;
+}
 
 footer {
     background-color: #cce2f0;

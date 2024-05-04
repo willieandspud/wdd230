@@ -1,0 +1,6 @@
+@media screen and (min-width: 851px) and (max-width: 1450px) {
+    main {
+    grid-template-columns: 1fr 1fr;
+    background-size: 100%;
+}
+}
