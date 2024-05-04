@@ -1,0 +1,7 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    background: linear-gradient(to bottom, #4c84c4, #cce2f0);
+}

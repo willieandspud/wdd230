@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+:root {
+    --cloud-bg: #fffcfd;
+    --cloud-inset-shadow: #e6dfdb;
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    text-shadow: -4px 4px 0px #d9923b;
+    text-decoration: underline;
+    text-decoration-color: #243d40;
+    text-decoration-thickness: 2px;
+}
+
+h2, h3 {
+    color: #ffffff;
+}
+
+h2 {
+    margin-bottom: 2em;
+}
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+header {
+    background-color: #4c84c4;
+    text-align: left;
+    padding: 2em;
+    color: #8f1e1e;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    background: linear-gradient(to bottom, #4c84c4, #cce2f0);
+}
+
+section {
+    padding: 80px;
+}
+
+.cloud1 {
+    position: absolute;
+    top: 175px;
+    left: 450px;
+    opacity: 1.0;
+    padding: 0;
+}
+
+footer {
+    background-color: #cce2f0;
+    color: #3a844a;
+    padding: 2em;
+    text-align: left;
+}
