@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    width: 66%;
     background-size: 100%;
 }
 .cloud2 {
