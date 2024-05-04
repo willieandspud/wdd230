@@ -1,4 +1,4 @@
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
 main {
     grid-template-columns: 1fr;
     grid-gap: 20px 0;
@@ -8,4 +8,10 @@ main {
 section img {
     max-width: 400px;
 }
+.cloud2 {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    opacity: 0;
+    }
 }

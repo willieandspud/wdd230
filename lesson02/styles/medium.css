@@ -1,6 +1,12 @@
-@media screen and (min-width: 851px) and (max-width: 1450px) {
+@media screen and (min-width: 951px) and (max-width: 1650px) {
     main {
     grid-template-columns: 1fr 1fr;
     background-size: 100%;
 }
+.cloud2 {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    opacity: 0;
+    }
 }

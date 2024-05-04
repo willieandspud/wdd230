@@ -46,6 +46,9 @@ main {
 section {
     padding: 80px;
 }
+section img {
+    z-index: 2;
+}
 
 .cloud1 {
     position: absolute;
@@ -63,8 +66,8 @@ section {
 }
 .cloud3 {
     position: absolute;
-    top: 750px;
-    left: 150px;
+    top: 650px;
+    left: 0px;
     opacity: 1.0;
     padding: 0;
     z-index: 1;
