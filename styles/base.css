@@ -50,7 +50,7 @@ header h1 {
 	content: "☰";
 }
 #menu.open::before {
-	content: "❎";
+	content: "✖️";
 }
 
 
