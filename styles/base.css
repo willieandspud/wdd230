@@ -30,17 +30,20 @@ header {
 }
 
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #eee;
-	color: #000;
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #2d465a;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
 
 #menu::before {
 	content: "☰";
+}
+#menu.open::before {
+	content: "❎";
 }
 
 
@@ -52,39 +55,6 @@ nav {
     padding: 10px;
     text-align: center; 
     font-size: 18px;
-}
-}
-.navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
-}
-
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-
-.navigation a:hover, navigation a:active {
-	color: white;
-	background-color: black;
-}
-
-.show li {
-	display: block;
-}
-
-#menu.show::before {
-	content: "X";
 }
 
 nav ul {
@@ -111,6 +81,14 @@ nav a :hover {
 nav ul li a {
     text-decoration: none;
     color: #f2f2f3;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+  }
+.open li a {
+	display: block;
 }
 
 main {
@@ -168,7 +146,7 @@ h2 {
     box-shadow: 2px 3px 6px #262521;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 950px) {
     nav ul {
         display: flex;
         justify-content: space-around;
