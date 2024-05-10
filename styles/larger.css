@@ -126,4 +126,8 @@
     nav a {
         vertical-align: middle;
     }
+   
+    #menu {
+        display: none;
+    }
 }    
