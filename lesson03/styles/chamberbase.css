@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
 
 h1, h2, h3 {
     font-family: 'Bebas Neue', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
 
 body, p {
     font-family: 'Unna', serif;
@@ -67,7 +66,7 @@ h2 {
     text-align: center;
   }
   .colors th {
-    background-color: rgb(134, 133, 133)393;
+    background-color: rgb(134, 133, 133);
   }
   .colors td{
     width: 25%;
