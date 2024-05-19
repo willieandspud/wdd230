@@ -51,9 +51,11 @@ header {
         color: #263833;
     }
 }
-#header (
-    color
-)
+#header {
+    color: #6e8a84;
+}
+
+
 #header p {
     display: block;
     align-self: center;
