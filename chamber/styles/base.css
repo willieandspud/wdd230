@@ -11,6 +11,7 @@ body, p {
 header {
     display: flex;
     flex-direction: row;
+    background-color: #6e8a84;
 }
 :root {
     --primary-color: #263833;
@@ -170,4 +171,7 @@ nav a{
 }
 #main {
     color: #F9FAF9;
+}
+footer {
+    background-color: #6e8a84;
 }
