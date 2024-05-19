@@ -133,7 +133,7 @@ nav a{
     width: 95%;
     margin: 20px auto;
 }
-#upcomingGrid, #annualGrid, #hiringGrid, #directoryGrid, #spotlightGrid, #newsGrid {
+#upcomingGrid, #annualGrid, #hiringGrid, #directoryGrid, #spotlightGrid, #weatherGrid {
     box-shadow: 5px 5px 5px #627a74;
     border-radius: 5px;
     border: 5px transparent;
@@ -151,11 +151,19 @@ nav a{
     grid-row: 1/2;
 }
 #hiringGrid {
+    grid-column: 7/8;
+    grid-row: 1/2;
+}
+#directoryGrid {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-#directoryGrid {
+#spotlightGrid {
     grid-column: 5/6;
+    grid-row: 2/3;
+}
+#weatherGrid{
+    grid-column: 7/8;
     grid-row: 2/3;
 }
 #main {
