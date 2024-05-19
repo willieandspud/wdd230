@@ -143,7 +143,7 @@ nav a{
     padding: 10%;
 }
 #upcomingGrid {
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 1/2;
 }
 #annualGrid {
@@ -151,7 +151,7 @@ nav a{
     grid-row: 1/2;
 }
 #hiringGrid {
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 2/3;
 }
 #directoryGrid {
