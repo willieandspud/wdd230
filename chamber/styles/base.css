@@ -158,3 +158,6 @@ nav a{
     grid-column: 5/6;
     grid-row: 2/3;
 }
+#main {
+    color: #F9FAF9;
+}
