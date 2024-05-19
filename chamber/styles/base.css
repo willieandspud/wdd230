@@ -123,7 +123,7 @@ nav a{
 #hero-text h3 {
     font-size: 1.5rem;
     margin-bottom: 0;
-    color: #F2F2F3;
+    color: #263833;
 }
 .page-grid {
     display: grid;
@@ -137,7 +137,7 @@ nav a{
     box-shadow: 5px 5px 5px #627a74;
     border-radius: 5px;
     border: 5px transparent;
-    background-color: F9FAF9;
+    background-color: #6e8a84;
     overflow: hidden;
     text-align: center;
     padding: 10%;
@@ -147,7 +147,7 @@ nav a{
     grid-row: 1/2;
 }
 #annualGrid {
-    grid-column: 5/7;
+    grid-column: 5/6;
     grid-row: 1/2;
 }
 #hiringGrid {
@@ -155,6 +155,6 @@ nav a{
     grid-row: 2/3;
 }
 #directoryGrid {
-    grid-column: 5/7;
+    grid-column: 5/6;
     grid-row: 2/3;
 }
