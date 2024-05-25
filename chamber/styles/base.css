@@ -14,10 +14,8 @@ body, p {
     --secondary-color: #627a74;
     --accent1-color: #F9FAF9;
     --accent2-color: #F2F2F3;
-  
-    --heading-font: Bebas Neue, sans-serif;
-    --paragraph-font: Unna, serif;
-  
+    --heading-font: 'Bebas Neue', sans-serif;
+    --paragraph-font: 'Unna', serif;
     --headline-color-on-white: #263833;
     --headline-color-on-color: #F9FAF9;
     --paragraph-color-on-white: #627a74;
@@ -34,14 +32,29 @@ header {
     flex-direction: column;
     background-color: #6e8a84;
     align-items: center;
+    position: relative;
 }
 
-#header p {
+.contact-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #F2F2F3;
+    text-align: left;
+}
+
+.contact-info p {
     margin: 5px 0;
 }
-.open a {
-	display: block;
+
+.header-text {
+    text-align: center;
 }
+
+.header-text h1, .header-text h3 {
+    margin: 0;
+}
+
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -60,23 +73,16 @@ header {
     content: "❎";
 }
 
-.open li {
-    display: block;
-    width: 100%;
-}
-
-.open li a {
-    display: block;
-}
-
 nav {
+    display: none;
     background-color: #6e8a84;
-    color: #F2F2F3;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav a {
@@ -85,6 +91,11 @@ nav a {
     color: black;
     text-decoration: none;
     padding: 1rem;
+}
+
+.open ul {
+    display: flex;
+    flex-direction: row;
 }
 
 #hero {
