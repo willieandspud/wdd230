@@ -46,7 +46,13 @@ header {
 .contact-info p {
     margin: 5px 0;
 }
-
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 
 .header-text h1, .header-text h3 {
     margin: 0;
