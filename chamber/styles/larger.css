@@ -12,12 +12,7 @@
         text-align: left;
         margin-right: auto;
     }
-
-    .header-text {
-        flex: 1;
-        text-align: center;
-    }
-
+    
     #menu {
         display: none; /* Hide hamburger button */
     }
