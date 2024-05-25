@@ -92,6 +92,9 @@ nav a {
     text-decoration: none;
     padding: 1rem;
 }
+.open nav {
+    display: block;
+}
 
 .open ul {
     display: flex;

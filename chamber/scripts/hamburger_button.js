@@ -1,7 +1,9 @@
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+document.addEventListener("DOMContentLoaded", function() {
+    const menuButton = document.getElementById("menu");
+    const nav = document.querySelector("nav");
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+    menuButton.addEventListener("click", function() {
+        menuButton.classList.toggle("open");
+        nav.classList.toggle("open");
+    });
 });
