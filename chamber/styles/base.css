@@ -111,12 +111,16 @@ nav a {
 #hero-text h1 {
     font-size: 2rem;
     color: #263833;
+    align-content: center;
+    align-items: center;
 }
 
 #hero-text h3 {
     font-size: 1rem;
     margin-bottom: 0;
     color: #263833;
+    align-content: center;
+    align-items: center;
 }
 
 .page-grid {
