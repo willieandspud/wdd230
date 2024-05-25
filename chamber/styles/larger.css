@@ -51,7 +51,7 @@ header {
         text-decoration: none;
         color: #263833;
     }
-}
+
 #header {
     color: #6e8a84;
     display: flex;
@@ -183,4 +183,8 @@ nav a{
 }
 footer {
     background-color: #6e8a84;
+}
+#menu {
+    display: none; /* hide hamburger button */
+}
 }
