@@ -59,6 +59,9 @@ header {
 
 
 #header p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     margin: 5px 0;
     padding: 0;
     position: static;
@@ -99,7 +102,20 @@ nav {
     color: #F2F2F3;
 }
 nav ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    flex: 1 1 100%;
+}
+
+
+.navigation {
+    flex-direction: row;
+}
+
+.navigation a {
+    flex: 1 1 100%;
 }
 nav a{
     display: block;
