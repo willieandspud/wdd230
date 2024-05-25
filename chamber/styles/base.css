@@ -18,10 +18,10 @@ body, p {
     --heading-font: Bebas Neue, sans-serif;
     --paragraph-font: Unna, serif;
   
-    --headline-color-on-white: #263833;  /* headlines on a white background */ 
-    --headline-color-on-color: #F9FAF9; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #627a74; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #F2F2F3; /* paragraph text on a colored background */ 
+    --headline-color-on-white: #263833;
+    --headline-color-on-color: #F9FAF9;
+    --paragraph-color-on-white: #627a74;
+    --paragraph-color-on-color: #F2F2F3;
     --paragraph-background-color: #6e8a84;
     --nav-link-color: #15261E;
     --nav-background-color: #F9FAF9;
@@ -39,7 +39,9 @@ header {
 #header p {
     margin: 5px 0;
 }
-
+.open a {
+	display: block;
+}
 #menu {
     font-size: 1.5rem;
     border: 0;

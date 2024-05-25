@@ -34,7 +34,13 @@ header {
     --nav-hover-background-color: #547368;
 }
     header {
+        display: flex;
         flex-direction: column;
+        background-color: #6e8a84;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+        margin: 0 auto;
     }
     .navigation {
         display: flex;
@@ -52,26 +58,18 @@ header {
         color: #263833;
     }
 
-#header {
-    color: #6e8a84;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding: 10px;
-    margin: 0 auto;
-}
-
 
 #header p {
     position: absolute;
     top: 10px;
     left: 10px;
-    margin: 0;
+    margin: 5px 0;
     padding: 0;
+    position: static;
+    text-align: left
 }
 
-#header h1, h3 {
+#hero-text {
     margin: 0;
     text-align: center;
 }
