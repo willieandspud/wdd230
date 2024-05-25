@@ -54,8 +54,11 @@ header {
 .header-text h1, .header-text h3 {
     margin: 0;
 }
-
+.open a {
+	display: block;
+}
 #menu {
+    display: block;
     font-size: 1.5rem;
     border: 0;
     background: none;
