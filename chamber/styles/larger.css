@@ -32,7 +32,7 @@
     }
 
     nav ul li {
-        flex: 1 1 100%;
+        flex: 1 1 auto;
     }
 
     nav a {
@@ -45,7 +45,7 @@
 
     .navigation {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #hero {
