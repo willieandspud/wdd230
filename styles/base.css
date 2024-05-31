@@ -152,10 +152,11 @@ picture img {
 
 .hero-overlay {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    top: 30px;
+	left: 30px;
+    background: #f2f2f3;
     color: #f2f2f3;
+    background-color: #f2f2f3;
     padding: 10px;
     white-space: nowrap;
     font-size: 1.5rem;
