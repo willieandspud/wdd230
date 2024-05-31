@@ -1,133 +1,27 @@
 @media screen and (min-width: 951px) {
-    body {
-        font-family: 'Josefin Sans', sans-serif; /* Apply Josefin Sans font to the whole document */
-        margin: 0;
-        padding: 0;
-    }
-    
-    header {
-        color: #f2f2f3;
-        padding: 10px;
-    }
-    .personal-info {
-        background-color: #723223;
-        color: #f2f2f3;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .personal-info img {
-        width: 75px;
-        margin-left: 10px; 
-        vertical-align: middle;
-        padding: 10px;
-    }
-    .personal-info h1 {
-        font-size: 24px;
-        display: inline;
-    }
-    
-    nav {
-        background-color: #343635;
-        color: #f2f2f3;
-        width: 100%;
-        margin: 0 auto;
-        padding: 10px;
-        text-align: center; 
-        font-size: 18px;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    nav ul li {
-        display: block; /* Display list items vertically */
-        margin-bottom: 10px; 
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        color: #f2f2f3;
-    }
-    
-    main {
-        width: 80%; 
-        margin: 0 auto;
-        padding: 20px;
-        display: flex; 
-        flex-direction: column; /* Arrange items in a single column */
-        align-items: center;
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 1rem;
-    }
-    
-    .card-wrapper {
-        width: 100%;
-        box-shadow: 4px 5px 10px #262521;
-        border-radius: 15px;
-        margin: 0 10px;
-        border: 3px solid #2d465a;
-        margin-bottom: 20px; 
-        flex: 1;
-        box-sizing: border-box;
-        }
-        .card-contain {
-        grid-row: 1/2;
-    }
-    .card-wrapper {
-        grid-row: 2/3;
-    }
-    .card-wrapper h3 {
-        text-align: center;
-        background-color: #d9a79d;
-        padding: 1rem 1rem;
-        border-radius: 10px 10px 10px 10px;
-        flex: 1;
-        box-shadow: 2px 3px 6px #262521;
-        border-radius: 10px;
-    }
-    
-    .card {
-        background-color: #f9f9f9;
-        padding: 10px;
-        border-radius: 15px;
-    }
-    
-    footer {
-        background-color: #343635;
-        color: #f2f2f3;
-        padding: 10px;
-        text-align: center;
-    }
-    
-    footer img {
-        height: 20px;
-        vertical-align: middle;
-        margin-left: 5px;
-    }
-    h2 {
-        text-decoration: underline;
-        color: #343635;
-    }
     nav ul {
         display: flex;
         justify-content: space-around;
     }
+
     nav ul li {
         flex: 1 1 100%;
     }
 
-    nav a {
-        vertical-align: middle;
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
-   
+
+    .card-contain {
+        grid-row: 1/2;
+    }
+
+    .card-wrapper {
+        grid-row: 2/3;
+    }
+
     #menu {
         display: none;
     }
-}    
+}
