@@ -140,6 +140,7 @@ iframe {
     margin: 1rem auto;
     border-radius: 20px;
     width: 100%;
+    display: grid;
     grid-column: 1/-1;
 }
 picture {
