@@ -137,11 +137,14 @@ nav a:hover {
 #hero {
     text-align: center;
     margin-top: -18px;
+    position: relative;
 }
 
 #hero-img img {
     width: 100%;
     height: auto;
+    position: relative;
+    z-index: -1;
 }
 
 picture {
@@ -170,6 +173,7 @@ picture img {
     font-size: 2rem;
     border-radius: 5px;
     text-align: center;
+    z-index: 1;
 }
 
 .page-grid {
