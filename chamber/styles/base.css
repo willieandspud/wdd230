@@ -175,7 +175,7 @@ picture img {
 .page-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(8, auto);
     grid-gap: 20px;
     width: 95%;
     margin: 20px auto;
@@ -184,6 +184,9 @@ picture img {
 main {
     background-color: #fff2e3;
     padding: 10px;
+    height: auto;
+    min-height: auto;
+    box-sizing: border-box;
 }
 
 #upcomingGrid, #annualGrid, #hiringGrid, #directoryGrid, #spotlightGrid, #weatherGrid {
