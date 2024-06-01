@@ -205,7 +205,7 @@ footer {
     #mode {
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        right: 3rem;
         font-size: 2rem;
         cursor: pointer;
         color: #333333;
