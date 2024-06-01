@@ -164,3 +164,7 @@ picture img {
     font-size: 1.5rem;
     border-radius: 5px;
 }
+
+.container-hero {
+    position: relative;
+}

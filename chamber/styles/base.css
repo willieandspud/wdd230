@@ -134,6 +134,11 @@ nav a:hover {
     display: block;
 }
 
+.container-hero {
+    position: relative;
+}
+
+
 #hero {
     text-align: center;
     margin-top: -18px;

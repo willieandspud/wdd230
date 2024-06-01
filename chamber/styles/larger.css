@@ -87,6 +87,10 @@
         display: block;
     }
     
+    .container-hero {
+        position: relative;
+    }
+    
     .hero-overlay {
         position: absolute;
         top: 10%;

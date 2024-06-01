@@ -64,5 +64,9 @@
     #menu {
         display: none;
     }
+   
+    .container-hero {
+        position: relative;
+    }
     
 }

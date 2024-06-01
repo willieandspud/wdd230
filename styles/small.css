@@ -19,4 +19,8 @@
     .open li a {
         display: block;
     }
+
+    .container-hero {
+        position: relative;
+    }
 }
