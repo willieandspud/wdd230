@@ -130,6 +130,15 @@
         grid-row: 2 / 3;
     }
     
+    #weatherGrid p {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+    
+    #weatherGrid span {
+        font-weight: bold;
+    }
+    
     footer {
         background-color: #6e8a84;
         color: #F9FAF9;
