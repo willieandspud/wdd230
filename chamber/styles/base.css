@@ -181,6 +181,11 @@ picture img {
     margin: 20px auto;
 }
 
+main {
+    background-color: #f4dec3;
+    padding: 10px;
+}
+
 #upcomingGrid, #annualGrid, #hiringGrid, #directoryGrid, #spotlightGrid, #weatherGrid {
     box-shadow: 5px 5px 5px #627a74;
     border-radius: 5px;
