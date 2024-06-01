@@ -175,6 +175,9 @@
         text-align: center;
         font-size: 0.9rem;
     }
+    #menu {
+        display: none;
+    }
     
     /* Dark mode styles */
     #mode {
