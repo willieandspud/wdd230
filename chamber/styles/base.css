@@ -177,7 +177,7 @@ picture img {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     grid-gap: 20px;
-    width: 100%;
+    width: 95%;
     margin: 20px auto;
 }
 
