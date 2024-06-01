@@ -142,7 +142,7 @@
         text-align: center;
         margin: 20px auto;
         width: 80%;
-        grid-column: 2 / 10;
+        grid-column: 1 / 11;
         grid-row: 3 / 4;
     }
 
