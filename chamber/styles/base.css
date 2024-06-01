@@ -205,6 +205,17 @@ main {
 #weatherGrid span {
     font-weight: bold;
 }
+.promote-text {
+    text-align: center;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.promote-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 
 footer {
     background-color: #6e8a84;
