@@ -208,6 +208,25 @@ main {
 #weatherGrid span {
     font-weight: bold;
 }
+
+#upcomingGrid p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+#upcomingGrid span {
+    font-weight: bold;
+}
+
+#annualGrid p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+#annualGrid span {
+    font-weight: bold;
+}
+
 .promote-text {
     text-align: center;
     margin: 20px auto;
