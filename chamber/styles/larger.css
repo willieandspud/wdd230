@@ -181,7 +181,7 @@
         right: 3rem;
         font-size: 2rem;
         cursor: pointer;
-        color: #333;
+        color: #333333;
     }
     
     #header-logo-dark {
@@ -189,25 +189,25 @@
     }
     
     body.dark-mode {
-        background-color: #333;
+        background-color: #333333;
         color: #F9FAF9;
     }
     
     body.dark-mode main {
-        background-color: #333;
+        background-color: #333333;
         color: #F9FAF9;
     }
     
     body.dark-mode header {
-        background-color: #333;
+        background-color: #333333;
     }
     
     body.dark-mode footer {
-        background-color: #333;
+        background-color: #333333;
     }
     
     body.dark-mode nav {
-        background-color: #333;
+        background-color: #333333;
     }
     
     body.dark-mode nav a {
