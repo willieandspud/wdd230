@@ -194,6 +194,11 @@ body.dark-mode header {
     color: #F9FAF9;
 }
 
+body.dark-mode header h1,
+body.dark-mode header h3 {
+    color: #F9FAF9;
+}
+
 body.dark-mode footer {
     background-color: #333;
     color: #F9FAF9;

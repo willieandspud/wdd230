@@ -170,29 +170,34 @@ footer {
 
 body.dark-mode {
     background-color: #333;
-    color: #F9FAF9; /* Change text color */
+    color: #F9FAF9;
 }
 
 body.dark-mode main {
     background-color: #333;
-    color: #F9FAF9; /* Change text color */
+    color: #F9FAF9;
 }
 
 body.dark-mode header {
     background-color: #333;
-    color: #F9FAF9; /* Change text color */
+    color: #F9FAF9;
+}
+
+body.dark-mode header h1,
+body.dark-mode header h3 {
+    color: #F9FAF9;
 }
 
 body.dark-mode footer {
     background-color: #333;
-    color: #F9FAF9; /* Change text color */
+    color: #F9FAF9;
 }
 
 body.dark-mode nav {
     background-color: #333;
-    color: #F9FAF9; /* Change text color */
+    color: #F9FAF9;
 }
 
 body.dark-mode nav a {
-    color: #F9FAF9; /* Change nav link color */
+    color: #F9FAF9;
 }
