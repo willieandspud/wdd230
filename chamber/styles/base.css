@@ -33,6 +33,13 @@ header {
     background-color: #6e8a84;
     align-items: center;
     position: relative;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#header-logo {
+    max-height: 100px;
+    margin-bottom: 10px;
 }
 
 .contact-info {
@@ -46,6 +53,7 @@ header {
 .contact-info p {
     margin: 5px 0;
 }
+
 .header-text {
     display: flex;
     flex-direction: column;
@@ -57,9 +65,7 @@ header {
 .header-text h1, .header-text h3 {
     margin: 0;
 }
-.open a {
-	display: block;
-}
+
 #menu {
     display: block;
     font-size: 1.5rem;
@@ -98,6 +104,7 @@ nav a {
     text-decoration: none;
     padding: 1rem;
 }
+
 .open nav {
     display: block;
 }
@@ -162,10 +169,14 @@ footer {
 #mode {
     position: absolute;
     top: 1rem;
-    right: 3rem; 
+    right: 3rem;
     font-size: 2rem;
     cursor: pointer;
     color: #333;
+}
+
+#header-logo-dark {
+    display: none;
 }
 
 body.dark-mode {
@@ -200,4 +211,12 @@ body.dark-mode nav {
 
 body.dark-mode nav a {
     color: #F9FAF9;
+}
+
+body.dark-mode #header-logo {
+    display: none;
+}
+
+body.dark-mode #header-logo-dark {
+    display: block;
 }

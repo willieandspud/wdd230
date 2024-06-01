@@ -1,20 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menuButton = document.getElementById("menu");
-    const nav = document.querySelector("nav");
-    const modeButton = document.getElementById("mode");
-    const body = document.body;
-
-    menuButton.addEventListener("click", function() {
-        menuButton.classList.toggle("open");
-        nav.classList.toggle("open");
-    });
-
-    modeButton.addEventListener("click", function() {
-        body.classList.toggle("dark-mode");
-        if (modeButton.textContent.includes("🕶️")) {
-            modeButton.textContent = "🔆";
-        } else {
-            modeButton.textContent = "🕶️";
-        }
-    });
+// Dark Mode Toggle
+document.getElementById('mode').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    toggleDarkModeLogo();
 });
+
+function toggleDarkModeLogo() {
+    var logoLight = document.getElementById("header-logo");
+    var logoDark = document.getElementById("header-logo-dark");
+
+    if (document.body.classList.contains("dark-mode")) {
+        logoLight.style.display = "none";
+        logoDark.style.display = "block";
+    } else {
+        logoLight.style.display = "block";
+        logoDark.style.display = "none";
+    }
+}
+
+toggleDarkModeLogo();
