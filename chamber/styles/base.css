@@ -137,6 +137,20 @@ nav a {
     height: auto;
 }
 
+picture {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .hero-overlay {
     position: absolute;
     top: 10%;
