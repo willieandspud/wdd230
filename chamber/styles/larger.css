@@ -184,8 +184,8 @@
         color: #333;
     }
     
-    body.dark-mode #header-logo {
-        filter: invert(1); /* Inverts logo colors for dark mode */
+    #header-logo-dark {
+        display: none;
     }
     
     body.dark-mode {
