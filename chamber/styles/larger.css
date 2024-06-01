@@ -141,8 +141,8 @@
     .promote-text {
         text-align: center;
         margin: 20px auto;
-        width: 80%;
-        grid-column: 1 / 11;
+        width: 100%;
+        grid-column: 2 / 10;
         grid-row: 3 / 4;
     }
 
