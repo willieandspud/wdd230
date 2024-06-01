@@ -38,7 +38,7 @@ header {
 }
 
 #header-logo {
-    max-height: 100px;
+    max-height: 50px;
     margin-bottom: 10px;
 }
 
@@ -124,19 +124,18 @@ nav a {
     height: auto;
 }
 
-#hero-text h1 {
+.hero-overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f2f2f3;
+    padding: 10px;
+    white-space: nowrap;
     font-size: 2rem;
-    color: #263833;
-    align-content: center;
-    align-items: center;
-}
-
-#hero-text h3 {
-    font-size: 1rem;
-    margin-bottom: 0;
-    color: #263833;
-    align-content: center;
-    align-items: center;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .page-grid {
