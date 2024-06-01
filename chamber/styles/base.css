@@ -74,7 +74,7 @@ header {
     color: #000;
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 3rem;
 }
 
 #menu::before {
@@ -86,15 +86,23 @@ header {
 }
 
 nav {
-    display: none;
+    display: block;
     background-color: #6e8a84;
+    color: #F2F2F3;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    margin: 0 10px;
 }
 
 nav a {
@@ -103,6 +111,11 @@ nav a {
     color: black;
     text-decoration: none;
     padding: 1rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
 }
 
 .open nav {
@@ -168,57 +181,42 @@ footer {
 }
 
 /* Dark mode styles */
-#mode {
-    position: absolute;
-    top: 1rem;
-    right: 3rem;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #333;
-}
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #333333;
+    }
+    
+    #header-logo-dark {
+        display: none;
+    }
+    
+    body.dark-mode {
+        background-color: #333333;
+        color: #F9FAF9;
+    }
+    
+    body.dark-mode main {
+        background-color: #333333;
+        color: #F9FAF9;
+    }
+    
+    body.dark-mode header {
+        background-color: #333333;
+    }
+    
+    body.dark-mode footer {
+        background-color: #333333;
+    }
+    
+    body.dark-mode nav {
+        background-color: #333333;
+    }
+    
+    body.dark-mode nav a {
+        color: #F9FAF9;
+    }
 
-#header-logo-dark {
-    display: none;
-}
-
-body.dark-mode {
-    background-color: #333;
-    color: #F9FAF9;
-}
-
-body.dark-mode main {
-    background-color: #333;
-    color: #F9FAF9;
-}
-
-body.dark-mode header {
-    background-color: #333;
-    color: #F9FAF9;
-}
-
-body.dark-mode header h1,
-body.dark-mode header h3 {
-    color: #F9FAF9;
-}
-
-body.dark-mode footer {
-    background-color: #333;
-    color: #F9FAF9;
-}
-
-body.dark-mode nav {
-    background-color: #333;
-    color: #F9FAF9;
-}
-
-body.dark-mode nav a {
-    color: #F9FAF9;
-}
-
-body.dark-mode #header-logo {
-    display: none;
-}
-
-body.dark-mode #header-logo-dark {
-    display: block;
-}
