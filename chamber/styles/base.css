@@ -163,6 +163,9 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+#footer-logo img {
+    max-height: 10px;
+}
 
 /* Dark mode styles */
 #mode {
