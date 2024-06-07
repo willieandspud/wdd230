@@ -9,7 +9,7 @@
             if (numVisits !== 0) {
                 visitsDisplay.textContent = `Number of visits: ${numVisits}`;
             } else {
-                visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+                visitsDisplay.textContent = `This is your first visit, partner 🤠 Howdy!`;
             }
 
             // 4️⃣ Increment the number of visits by one.
