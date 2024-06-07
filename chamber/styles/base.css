@@ -192,6 +192,10 @@ picture img {
 
 main {
     background-color: #fff2e3;
+    padding: 10px;
+    height: auto;
+    min-height: auto;
+    box-sizing: border-box;
 }
 
 #upcomingGrid, #annualGrid, #hiringGrid, #directoryGrid, #spotlightGrid, #weatherGrid {
