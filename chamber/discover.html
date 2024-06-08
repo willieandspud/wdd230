@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincrest Chamber of Commerce - Discover</title>
+    <meta name="author" content="Ryan Lloyd">
+    <meta name="description" content="Discover local interests with the Pinecrest Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Pincrest Chamber of Commerce Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://willieandspud.github.io/wdd230/chamber/images/pine_trees1.jpg">
+    <meta property="og:url" content="https://willieandspud.github.io/wdd230/chamber/discover.html">
+</head>
+<body>
+    <header>
+        <section id="hero-text">
+            <img src="images/logo.webp" alt="Pinecrest Chamber of Commerce Logo" id="header-logo">
+            <img src="images/logo-darkmode.webp" alt="Pinecrest Chamber of Commerce Logo" id="header-logo-dark">
+        </section>
+    </header>
+
+    <nav>
+        <button id="menu" name="Hamburger Button"></button>
+        <div id="mode">🕶️</div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Join the Chamber</a></li>
+            <li><a href="#">For Members</a></li>
+            <li><a href="#">News and Events</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-grid">
+        <aside class="sidebar">
+            <h2>Welcome</h2>
+            <p id="visit-message"></p>
+        </aside>
+        <section class="photo-gallery">
+            <article>
+                <img data-src="images/local1.webp" alt="Local Attraction 1" class="lazy">
+                <p>Caption for local attraction 1</p>
+            </article>
+            <article>
+                <img data-src="images/local2.webp" alt="Local Attraction 2" class="lazy">
+                <p>Caption for local attraction 2</p>
+            </article>
+            <article>
+                <img data-src="images/local3.webp" alt="Local Attraction 3" class="lazy">
+                <p>Caption for local attraction 3</p>
+            </article>
+            <article>
+                <img data-src="images/local3.webp" alt="Local Attraction 3" class="lazy">
+                <p>Caption for local attraction 4</p>
+            </article>
+            <article>
+                <img data-src="images/local3.webp" alt="Local Attraction 3" class="lazy">
+                <p>Caption for local attraction 5</p>
+            </article>
+            <article>
+                <img data-src="images/local3.webp" alt="Local Attraction 3" class="lazy">
+                <p>Caption for local attraction 6</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item" id="footer-logo">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+            <div class="footer-item" id="contact-info">
+                <p>Pinecrest Chamber of Commerce</p>
+                <p>101 Pine Street, Pinecrest, OR</p>
+            </div>
+            <div class="footer-item" id="contact-details">
+                <p>(123) 456-7890</p>
+                <p>info@pinecrestchamber.gov</p>
+            </div>
+        </div>
+        <p id="copyright">
+            &copy;<span id="currentYear"></span> Ryan Lloyd | WDD 230 Project
+        </p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger_button.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/darkModeLogo.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/visitMessage.js"></script>
+</body>
+</html>
