@@ -298,8 +298,6 @@ footer {
     }
 /* Dark mode styles ^ */
 
-/* Add to your existing CSS */
-
 .discover-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
