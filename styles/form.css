@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #723223;
+    --secondary-color: #343635;
+    --text-color: #f2f2f3;
+    --font-family: 'Josefin Sans', sans-serif;
+    --input-border-radius: 5px;
+    --input-padding: 10px;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header img {
+    width: 75px;
+    margin-left: 10px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    display: inline;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--text-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+nav {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px #262521;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: var(--input-padding);
+    margin-bottom: 15px;
+    border-radius: var(--input-border-radius);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form input[type="range"] {
+    padding: 0;
+}
+
+form span {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #582015;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
