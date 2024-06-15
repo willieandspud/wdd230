@@ -355,22 +355,45 @@ main.form-container {
     box-shadow: 5px 5px 5px var(--secondary-color);
 }
 
+/* Form styling */
 .form-column form {
-    display: grid;
-    grid-gap: 15px;
-}
-
-.form-column form label {
     display: flex;
     flex-direction: column;
 }
 
-.form-column form input, .form-column form select, .form-column form textarea {
+.form-column form label {
+    margin-bottom: 10px;
+}
+
+.form-column form label, 
+.form-column form input, 
+.form-column form select, 
+.form-column form textarea, 
+.form-column form button {
+    width: 100%;
     padding: 10px;
+    margin: 5px 0;
+}
+
+.form-column form input, 
+.form-column form select, 
+.form-column form textarea {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
+/* Button styling */
+.form-column form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-column form button:hover {
+    background-color: #555;
+}
 
 /* Join styles ^ */
 
