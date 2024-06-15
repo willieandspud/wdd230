@@ -355,9 +355,6 @@ main.form-container {
     border-radius: 5px;
     box-shadow: 5px 5px 5px var(--secondary-color);
 }
-.benefits-column {
-    text-align: center;
-}
 
 /* Form styling */
 .form-column form {
@@ -374,8 +371,8 @@ main.form-container {
 .form-column form select, 
 .form-column form textarea, 
 .form-column form button {
-    max-width: 90%;
-    width: 90%;
+    max-width: 100%;
+    width: 100%;
     padding: 10px;
     margin: 5px 0;
 }
