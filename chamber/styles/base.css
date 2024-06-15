@@ -347,12 +347,15 @@ main.form-container {
     padding: 20px;
 }
 
-.form-column, .benefits-column {
+.benefits-column, .form-column {
     background-color: var(--accent1-color);
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 5px 5px 5px var(--secondary-color);
+}
+.benefits-column {
+    text-align: center;
 }
 
 /* Form styling */
@@ -370,6 +373,7 @@ main.form-container {
 .form-column form select, 
 .form-column form textarea, 
 .form-column form button {
+    max-width: 100%;
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -381,6 +385,7 @@ main.form-container {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 
 /* Button styling */
 .form-column form button {
