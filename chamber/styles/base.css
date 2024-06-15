@@ -340,26 +340,37 @@ footer {
 
 /* Join styles */
 
-.form-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+main.form-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
+    padding: 20px;
 }
 
-.form-column {
-    flex: 1;
-    min-width: 300px;
-}
-
-.benefits-column {
-    flex: 1;
-    min-width: 300px;
+.form-column, .benefits-column {
     background-color: var(--accent1-color);
     padding: 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 5px 5px 5px var(--secondary-color);
 }
+
+.form-column form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.form-column form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column form input, .form-column form select, .form-column form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 
 /* Join styles ^ */
 
