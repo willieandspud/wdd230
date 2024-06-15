@@ -373,8 +373,8 @@ main.form-container {
 .form-column form select, 
 .form-column form textarea, 
 .form-column form button {
-    max-width: 100%;
-    width: 100%;
+    max-width: 90%;
+    width: 90%;
     padding: 10px;
     margin: 5px 0;
 }
