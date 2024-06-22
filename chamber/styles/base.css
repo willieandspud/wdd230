@@ -17,9 +17,9 @@ body, p {
     --heading-font: 'Bebas Neue', sans-serif;
     --paragraph-font: 'Unna', serif;
     --headline-color-on-white: #263833;
-    --headline-color-on-color: #929592;
+    --headline-color-on-color: #F9FAF9;
     --paragraph-color-on-white: #627a74;
-    --paragraph-color-on-color: #929592;
+    --paragraph-color-on-color: #F2F2F3;
     --paragraph-background-color: #6e8a84;
     --nav-link-color: #15261E;
     --nav-background-color: #F9FAF9;
@@ -490,7 +490,7 @@ main.form-container {
 .member-card h2 {
     font-family: var(--heading-font);
     font-size: 1.5rem;
-    color: var(--headline-color-on-color);
+    color: #929592;
     margin: 10px 0;
 }
 
@@ -498,11 +498,11 @@ main.form-container {
     font-family: var(--paragraph-font);
     font-size: 1rem;
     margin: 5px 0;
-    color: var(--paragraph-color-on-color);
+    color: #929592;
 }
 
 .member-card a {
-    color: var(--paragraph-color-on-color);
+    color: #929592;
     text-decoration: none;
 }
 
