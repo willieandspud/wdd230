@@ -445,6 +445,13 @@ main.form-container {
 /* Thank you styles ^ */
 
 /* Directory styles */
+#member-directory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 #member-directory.grid-view .member-card {
     display: inline-block;
     width: calc(33.33% - 20px);
@@ -490,7 +497,7 @@ main.form-container {
 .member-card h2 {
     font-family: var(--heading-font);
     font-size: 1.5rem;
-    color: #929592;
+    color: #263833;
     margin: 10px 0;
 }
 
@@ -502,7 +509,7 @@ main.form-container {
 }
 
 .member-card a {
-    color: #929592;
+    color: var(--paragraph-color-on-color);
     text-decoration: none;
 }
 
@@ -528,5 +535,11 @@ main.form-container {
 
 #toggle-view:hover {
     background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    #member-directory.grid-view .member-card {
+        width: calc(100% - 20px);
+    }
 }
 /* Directory styles ^ */
