@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Sea Level Bakery",
+        "address": "123 Baker Street, Pinecrest, OR",
+        "phone": "(123) 456-7890",
+        "website": "http://sealevelbakery.com",
+        "image": "bakery.webp",
+        "membership_level": "Gold",
+        "description": "A bakery offering the finest breads and pastries in Pinecrest."
+    },
+    {
+        "name": "Tech Solutions",
+        "address": "456 Tech Ave, Pinecrest, OR",
+        "phone": "(987) 654-3210",
+        "website": "http://techsolutions.com",
+        "image": "tech.webp",
+        "membership_level": "Silver",
+        "description": "Innovative tech solutions for your business."
+    },
+    {
+        "name": "Pinecrest Fitness",
+        "address": "789 Gym Road, Pinecrest, OR",
+        "phone": "(555) 123-4567",
+        "website": "http://pinecrestfitness.com",
+        "image": "fitness.webp",
+        "membership_level": "Bronze",
+        "description": "Your local gym and fitness center."
+    },
+    {
+        "name": "Green Thumb Garden Center",
+        "address": "321 Garden Lane, Pinecrest, OR",
+        "phone": "(555) 987-6543",
+        "website": "http://greenthumbgardens.com",
+        "image": "garden.webp",
+        "membership_level": "Gold",
+        "description": "Everything you need for your garden."
+    },
+    {
+        "name": "The Book Nook",
+        "address": "654 Book St, Pinecrest, OR",
+        "phone": "(555) 321-7654",
+        "website": "http://booknook.com",
+        "image": "bookstore.webp",
+        "membership_level": "Silver",
+        "description": "A wide selection of books for all ages."
+    },
+    {
+        "name": "Mountain High Outdoor Gear",
+        "address": "111 Adventure Way, Pinecrest, OR",
+        "phone": "(555) 111-2222",
+        "website": "http://mountainhighgear.com",
+        "image": "outdoor.webp",
+        "membership_level": "Gold",
+        "description": "Gear for all your outdoor adventures."
+    },
+    {
+        "name": "Lutz Hardware",
+        "address": "222 Java Lane, Pinecrest, OR",
+        "phone": "(555) 333-4444",
+        "website": "http://lutzhardware.com",
+        "image": "hardware.webp",
+        "membership_level": "Bronze",
+        "description": "Cozy coffee house with the best brews."
+    }
+]
