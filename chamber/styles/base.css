@@ -497,7 +497,7 @@ main.form-container {
 .member-card h2 {
     font-family: var(--heading-font);
     font-size: 1.5rem;
-    color: #263833;
+    color: pink;
     margin: 10px 0;
 }
 
@@ -509,7 +509,7 @@ main.form-container {
 }
 
 .member-card a {
-    color: var(--paragraph-color-on-color);
+    color: #6e8a84;
     text-decoration: none;
 }
 
