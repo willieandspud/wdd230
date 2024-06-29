@@ -27,6 +27,23 @@ body, p {
     --nav-hover-background-color: #547368;
 }
 
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px;
+    position: relative;
+}
+
+.banner button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 header {
     display: flex;
     flex-direction: column;
