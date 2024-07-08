@@ -8,11 +8,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 memberCard.classList.add('member-card');
 
                 
-                const infoDiv1 = document.createElement('div');
+                const img = document.createElement('img');
+                img.src = `images/${member.image}`;
+                img.alt = member.name;
+
+                
+                const infoDiv = document.createElement('div');
                 const name = document.createElement('h2');
                 const address = document.createElement('p');
                 const phone = document.createElement('p');
                 const website = document.createElement('a');
+                const membershipLevel = document.createElement('p');
+                const description = document.createElement('p');
 
                 name.textContent = member.name;
                 address.textContent = member.address;
@@ -20,25 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 website.href = member.website;
                 website.target = "_blank";
                 website.textContent = member.website;
-
-                infoDiv1.appendChild(name);
-                infoDiv1.appendChild(address);
-                infoDiv1.appendChild(phone);
-                infoDiv1.appendChild(website);
-
-                const infoDiv2 = document.createElement('div');
-                const membershipLevel = document.createElement('p');
-                const description = document.createElement('p');
-
                 membershipLevel.textContent = `Membership Level: ${member.membership_level}`;
                 description.textContent = member.description;
 
-                infoDiv2.appendChild(membershipLevel);
-                infoDiv2.appendChild(description);
+                
+                infoDiv.appendChild(name);
+                infoDiv.appendChild(address);
+                infoDiv.appendChild(phone);
+                infoDiv.appendChild(website);
+                infoDiv.appendChild(membershipLevel);
+                infoDiv.appendChild(description);
 
                 
-                memberCard.appendChild(infoDiv1);
-                memberCard.appendChild(infoDiv2);
+                memberCard.appendChild(img);
+                memberCard.appendChild(infoDiv);
 
                 
                 memberDirectory.appendChild(memberCard);
