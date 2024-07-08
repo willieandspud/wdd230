@@ -9,7 +9,7 @@ async function fetchWeather() {
         const data = await response.json();
 
         const currentWeather = data.list[0];
-        document.getElementById('temperature').textContent = currentWeather.main.temp;
+        document.getElementById('temperature').textContent = Math.round(currentWeather.main.temp);
         document.getElementById('weather-description').textContent = currentWeather.weather[0].description;
 
         const forecastElement = document.getElementById('forecast');
@@ -19,7 +19,7 @@ async function fetchWeather() {
         for (let i = 0; i < 24; i += 8) {
             const forecastData = data.list[i];
             const forecastItem = document.createElement('li');
-            forecastItem.textContent = `Day ${i / 8 + 1}: ${forecastData.main.temp} °F`;
+            forecastItem.textContent = `Day ${i / 8 + 1}: ${Math.round(forecastData.main.temp)} °F`;
             forecastElement.appendChild(forecastItem);
         }
     } catch (error) {
