@@ -29,12 +29,13 @@ body, p {
 
 .banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #ffcc00;
+    background-color: #f1e3a8;
     color: #000;
     padding: 10px;
     position: relative;
+    text-align: center;
 }
 
 .banner button {
