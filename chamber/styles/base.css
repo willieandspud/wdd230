@@ -469,34 +469,13 @@ main.form-container {
     gap: 20px;
 }
 
-#member-directory.grid-view .member-card {
-    display: inline-block;
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    vertical-align: top;
-    background-color: var(--accent1-color);
-    color: var(--paragraph-color-on-color);
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px var(--secondary-color);
-    transition: transform 0.3s ease;
-}
-
-#member-directory.list-view .member-card {
-    display: block;
-    width: calc(100% - 20px);
-    margin: 10px auto;
-    background-color: var(--accent1-color);
-    color: var(--paragraph-color-on-color);
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px var(--secondary-color);
-    transition: transform 0.3s ease;
-}
-
 .member-card {
     padding: 15px;
-    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--secondary-color);
     transition: transform 0.3s ease;
 }
 
@@ -558,5 +537,41 @@ main.form-container {
     #member-directory.grid-view .member-card {
         width: calc(100% - 20px);
     }
+}
+
+/* Grid view styles */
+#member-directory.grid-view .member-card {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    vertical-align: top;
+}
+
+/* List view styles */
+#member-directory.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#member-directory.list-view .member-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#member-directory.list-view .member-card div p,
+#member-directory.list-view .member-card div a {
+    flex: 1;
+    margin: 0 10px;
+}
+
+#member-directory.list-view .member-card div p:first-child,
+#member-directory.list-view .member-card div a:first-child {
+    flex: 2;
+    margin: 0 10px;
 }
 /* Directory styles ^ */
