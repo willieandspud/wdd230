@@ -344,6 +344,7 @@ footer {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px var(--secondary-color);
+    height: 30px;
 }
 
 .photo-gallery {
