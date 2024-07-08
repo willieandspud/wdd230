@@ -344,13 +344,18 @@ footer {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px var(--secondary-color);
-    height: 50px;
+    height: 80px;
 }
 
 .photo-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
     gap: 20px;
+    grid-column: 1/2;
+}
+
+.discoverContent {
+    grid-column: 2/3;
 }
 
 .photo-gallery article {
