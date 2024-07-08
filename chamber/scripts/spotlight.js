@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     fetch('members.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             const spotlightMembers = data.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
             
@@ -15,18 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     const memberElement = createMemberElement(member);
                     spotlightGrid.appendChild(memberElement);
                 });
+            } else {
+                console.error('Spotlight grid element not found');
             }
         })
-        .catch(error => console.error('Error fetching members data:', error));
+        .catch(error => console.error('Error fetching or parsing members data:', error));
 });
-
 
 function getRandomMembers(members) {
     const numMembersToShow = Math.floor(Math.random() * 2) + 2;
     const shuffledMembers = members.sort(() => 0.5 - Math.random());
     return shuffledMembers.slice(0, numMembersToShow);
 }
-
 
 function createMemberElement(member) {
     const div = document.createElement('div');
