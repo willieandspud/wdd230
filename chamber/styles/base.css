@@ -207,6 +207,18 @@ picture img {
     margin: 20px auto;
 }
 
+.page-grid img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.page-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main {
     background-color: #fff2e3;
     padding: 10px;
