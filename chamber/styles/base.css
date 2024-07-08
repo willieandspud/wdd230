@@ -351,13 +351,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
     gap: 20px;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.discoverContent {
-    grid-column: 2/3;
-    grid-row: 1/2;
 }
 
 .photo-gallery article {
