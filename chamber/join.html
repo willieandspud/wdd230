@@ -18,10 +18,11 @@
 </head>
 <body>
    <header>
-       <section id="hero-text">
-           <img src="images/logo.webp" alt="Pinecrest Chamber of Commerce Logo" id="header-logo">
-           <img src="images/logo-darkmode.webp" alt="Pinecrest Chamber of Commerce Logo" id="header-logo-dark">
-       </section>
+    <section id="hero-text">
+        <h1>Welcome to Pinecrest Chamber of Commerce</h1>
+        <img src="images/logo.webp" alt="Pinecrest Chamber of Commerce Logo" id="header-logo">
+        <img src="images/logo-darkmode.webp" alt="Pinecrest Chamber of Commerce Logo" id="header-logo-dark">
+    </section>
    </header>
   
    <nav>
@@ -67,13 +68,14 @@
                    <input type="text" id="organization" name="organization" required>
                </label>
                <label for="membership">Membership Level:
-                   <select id="membership" name="membership" required>
-                       <option value="NP">NP Membership (Non-Profit)</option>
-                       <option value="Bronze">Bronze Membership</option>
-                       <option value="Silver">Silver Membership</option>
-                       <option value="Gold">Gold Membership</option>
-                   </select>
-               </label>
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>Select Membership Level</option>
+                    <option value="NP">NP Membership (Non-Profit)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
                <label for="description">Business/Organization Description:
                    <textarea id="description" name="description"></textarea>
                </label>
