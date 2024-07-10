@@ -371,6 +371,10 @@ footer {
     transform: scale(1.1);
 }
 
+.custom-gap {
+    margin-top: -20px; /* Adjust the value as needed */
+}
+
 /* Discover styles ^ */
 
 /* Join styles */
