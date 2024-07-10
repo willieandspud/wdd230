@@ -1,51 +1,48 @@
-const infoURL = "https://willieandspud.github.io/wdd230/chamber/data/members.json";
 
-async function GetInfo() {
-    try {
-        const response = await fetch(infoURL);
-        const data = await response.json();
-        displaySpotlights(data.companies);
-    } catch (error) {
-        console.error("Error fetching member data:", error);
-    }
-}
+const jsonUrl = 'https://willieandspud.github.io/wdd230/chamber/data/members.json';
 
-function getHighStatusCompanies(companies) {
-    const highStatus = companies.filter(company =>
-        company.membership === "Silver" || company.membership === "Gold"
-    );
-    return highStatus.sort(() => 0.5 - Math.random()).slice(0, 3);
-}
+document.addEventListener('DOMContentLoaded', () => {
+    fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            const silverGoldMembers = data.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
+            displaySpotlightMembers(silverGoldMembers);
+        })
+        .catch(error => console.error('Error fetching the JSON data:', error));
+});
 
-function displaySpotlights(companies) {
-    const highStatusCompanies = getHighStatusCompanies(companies);
+function displaySpotlightMembers(members) {
+    const spotlightContainer = document.querySelector('#spotlightGrid .cards');
+    spotlightContainer.innerHTML = '';
+    const selectedMembers = getRandomMembers(members, 2, 3);
 
-    highStatusCompanies.forEach((company) => {
-        let card = document.createElement("section");
-        let logo = document.createElement("img");
-        let address = document.createElement("p");
-        let number = document.createElement("p");
-        let website = document.createElement("a");
+    selectedMembers.forEach(member => {
+        const memberCard = document.createElement('div');
+        memberCard.classList.add('member-card');
 
-        address.innerHTML = company.address;
-        number.innerHTML = company.phone;
-        website.innerHTML = "Website";
+        memberCard.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}">
+            <h4>${member.name}</h4>
+            <p>${member.description}</p>
+            <p><a href="${member.website}" target="_blank">Visit Website</a></p>
+        `;
 
-        card.setAttribute('class', "card");
-        logo.setAttribute('class', "logo");
-        logo.setAttribute('src', company.image);
-        logo.setAttribute('alt', `${company.name}'s logo`);
-        logo.setAttribute('loading', "lazy");
-
-        website.setAttribute('href', company.website);
-
-        card.appendChild(logo);
-        card.appendChild(address);
-        card.appendChild(number);
-        card.appendChild(website);
-
-        document.querySelector('.cards').appendChild(card);
+        spotlightContainer.appendChild(memberCard);
     });
 }
 
-document.addEventListener("DOMContentLoaded", GetInfo);
+function getRandomMembers(array, min, max) {
+    const selectedMembers = [];
+    const numMembers = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    while (selectedMembers.length < numMembers) {
+        const randomIndex = Math.floor(Math.random() * array.length);
+        const member = array[randomIndex];
+
+        if (!selectedMembers.includes(member)) {
+            selectedMembers.push(member);
+        }
+    }
+
+    return selectedMembers;
+}
