@@ -388,7 +388,15 @@ footer {
 
 @media (min-width: 768px) {
     .main.form-container {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 1fr; /* Change the order and size of columns */
+    }
+
+    .form-column {
+        order: 1; /* Ensure form is on the left */
+    }
+
+    .benefits-column {
+        order: 2; /* Ensure benefits section is on the right */
     }
 }
 
