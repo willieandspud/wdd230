@@ -497,49 +497,6 @@ footer {
     color: lightgray;
 }
 
-/* Reservations Banner */
-.reservations-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 50px;
-}
-.reservations-banner.banner-one div {
-    text-align: center;
-    padding: 20px;
-    order: 1;
-}
-.reservations-banner.banner-two div {
-    text-align: center;
-    padding: 20px;
-    order: 2;
-}
-.reservations-banner.banner-one img {
-    width: 400px;
-    height: auto;
-    order: 2;
-}
-.reservations-banner.banner-two img {
-    width: 400px;
-    height: auto;
-    order: 1;
-}
-.banner-one {
-    background-color: var(--accent3-color);
-    color: var(--text-color-header);
-}
-.banner-two {
-    background-color: var(--accent2-color);
-    color: var(--text-color-header);
-}
-
-@media (min-width: 768px) {
-    .reservations-banner {
-        display: flex;
-        flex-direction: row;
-    }
-}
 /* Modal styles */
 .modal {
     display: none;
@@ -586,9 +543,7 @@ footer {
     cursor: pointer;
 }
 
-/* *********************************
-    Contact Page Styles & Reservations Page Styles
-************************************ */
+/*  Contact & Reservations */
 .contact-area,
 .reservations-area {
     display: flex;
