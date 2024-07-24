@@ -256,11 +256,11 @@ footer {
 .btn-reserve {
     text-decoration: none;
     color: var(--text-color-header);
-    background-color: var(--accent3-color);
+    background-color: #d9923b;
 }
 .btn-secondary:hover,
 .btn-reserve:hover {
-    background-color: #bef264;
+    background-color: #f6ab5a;
 }
 /* Buttons ^ */
 
