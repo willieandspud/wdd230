@@ -1,4 +1,4 @@
-// Array of country names
+// Countries
 const countries = [
     "Argentina",
     "Australia",
@@ -44,7 +44,7 @@ const countries = [
     "United States",
 ];
 
-// Function to populate the dropdown
+// Dropdown
 function populateCountryDropdown() {
     const dropdown = document.getElementById("countryDropdown");
 
@@ -119,9 +119,7 @@ function closeModal() {
     document.getElementById("successModal").style.display = "none";
 }
 
-/* ****************************************************
-    Rental Data and Details
-***************************************************** */
+
 
 const dataURL = "https://willieandspud.github.io/wdd230/scoots/data/rentals.json";
 
