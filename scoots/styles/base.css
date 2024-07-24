@@ -438,15 +438,6 @@ footer {
     width: 100%;
     max-width: 375px;
 }
-.card-hours {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    max-width: 300px;
-}
 
 .card h3 {
     font-size: 1.1em;
@@ -619,18 +610,6 @@ footer {
 }
 .reservations-area p {
     text-align: center;
-}
-.hours {
-    margin: 25px auto;
-}
-.hours h5 {
-    font-size: 1em;
-    font-weight: 600;
-    margin: 5px 0;
-}
-.hours p {
-    font-size: 0.9em;
-    margin: 5px 0;
 }
 .reservations-fun {
     text-align: center;
@@ -926,9 +905,4 @@ tbody tr td:first-child {
     list-style: none;
     line-height: 1.6;
     gap: 10px;
-}
-.check-svg {
-    width: 0.875rem;
-    height: 0.875rem;
-    color: var(--accent3-color);
 }
