@@ -927,15 +927,6 @@ tbody tr td:first-child {
     line-height: 1.6;
     gap: 10px;
 }
-.rental-benefits li::before,
-.agreement li::before {
-    content: "";
-    display: inline-block;
-    width: 0.875rem;
-    height: 0.875rem;
-    background-image: url("../images/svg/circle-check.svg");
-    background-size: cover;
-}
 .check-svg {
     width: 0.875rem;
     height: 0.875rem;
