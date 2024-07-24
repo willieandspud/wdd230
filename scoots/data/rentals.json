@@ -1,0 +1,59 @@
+[
+    {
+      "type": "Honda Metropolitan",
+      "cc": 49,
+      "max_persons": 1,
+      "half_day_reservation": 20,
+      "full_day_reservation": 30,
+      "half_day_walkin": 25,
+      "full_day_walkin": 35
+    },
+    {
+      "type": "Honda Dio",
+      "cc": 110,
+      "max_persons": 2,
+      "half_day_reservation": 30,
+      "full_day_reservation": 40,
+      "half_day_walkin": 35,
+      "full_day_walkin": 45
+    },
+    {
+      "type": "Honda PCX150",
+      "cc": 149,
+      "max_persons": 2,
+      "half_day_reservation": 40,
+      "full_day_reservation": 50,
+      "half_day_walkin": 45,
+      "full_day_walkin": 55
+    },
+    {
+      "type": "Honda Pioneer 1000",
+      "cc": 999,
+      "max_persons": 4,
+      "half_day_reservation": 60,
+      "full_day_reservation": 80,
+      "half_day_walkin": 70,
+      "full_day_walkin": 90
+    },
+    {
+      "type": "Jeep Wrangler",
+      "cc": null,
+      "max_persons": 5,
+      "half_day_reservation": 80,
+      "full_day_reservation": 100,
+      "half_day_walkin": 90,
+      "full_day_walkin": 110,
+      "doors": 4
+    },
+    {
+      "type": "Jeep Wrangler",
+      "cc": null,
+      "max_persons": 4,
+      "half_day_reservation": 70,
+      "full_day_reservation": 90,
+      "half_day_walkin": 80,
+      "full_day_walkin": 100,
+      "doors": 2
+    }
+  ]
+  

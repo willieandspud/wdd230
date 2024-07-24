@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d9cdc6;
+    color: #0e0e0e;
+}
+
+header {
+    background-color: #a6bcc9;
+    color: #0e0e0e;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.links img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.links {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f2f2f3;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #f2f2f3;
+    color: #0e0e0e;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.rentals-summary,
+.weather,
+.social-media,
+.contact-info,
+.map,
+.contact-form {
+    margin-bottom: 2rem;
+}
+
+.rental {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.rental img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.message {
+    background-color: #d3750d;
+    color: #0e0e0e;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.message.closeable {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #a6bcc9;
+    color: #0e0e0e;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #0e0e0e;
+    text-decoration: none;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff7733;
+}
+/* Rental styles */
+.rentals-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rentals-table th,
+.rentals-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.rentals-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Contact styles */
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Reservation styles */
+.reservation-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.reservation-form label {
+    font-weight: bold;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation-form button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reservation-form button:hover {
+    background-color: #ff7733;
+}

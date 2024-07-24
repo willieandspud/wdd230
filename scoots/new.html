@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scoots - Cozumel Motor Rentals - Home</title>
+        <meta name="author" content="Ryan Lloyd">
+        <meta name="description" content="Experience the best of Cozumel, in the best way possible. Scooter, ATV, and Jeep rentals, that combine style and performance for a day at Cozumel you'll never forget.">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="Scoots - Cozumel Rental Services">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="images/hero.webp">
+        <meta property="og:url" content="https://willieandspud.github.io/wdd230/">
+    
+    </head>
+    <body>
+        <article id="banner">
+            <h2>Todays high temperature will be: <span class="tempHigh"></span> &deg;F</h2>
+            <button type="button" id="closeBanner" aria-label="Close banner">x</button>
+        </article>
+        <header class="nav">
+            <div class="nav-brand">
+                <img src="images/logo.svg" alt="company logo" width="60" height="60" loading="lazy" />
+                <h1 id="nav-title">Scoots Rentals</h1>
+            </div>
+            <div class="nav-box">
+                <div class="nav-info">
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                    <nav class="nav-links">
+                        <ul>
+                            <li><a href="./index.html" class="active-page">Home</a></li>
+                            <li><a href="./rentals.html">Rentals</a></li>
+                            <li><a href="./reservations.html">Reservations</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav-toggle" class="nav-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="weather-container"></div>
+            <div class="hero-section">
+                <div class="hero-container">
+                    <div class="hero-info">
+                        <section>
+                            <h2>
+                                <span>Explore more of Cozumel with Scoots!</span>
+                            </h2>
+                            <p>Scooter, ATV & Jeep Rentals</p>
+
+                            <a class="btn btn-primary" href="./rentals.html">Make a reservation now!</a>
+                        </section>
+                    </div>
+                </div>
+                <div class="hero-image"></div>
+            </div>
+            <section class="home-info">
+                <h2>Rent a Ride Today</h2>
+                <h3>Rev up your island getaway with Scoots Rentals!</h3>
+                <p>
+                    Our fleet of scooters, ATVs, and Jeeps are the perfect way to explore the island of Cozumel. They give you the opportunity to set
+                    your own pace and see the sights at your leisure. Whether you're looking for a quick ride to the beach or a full day of adventure,
+                    Scoots Rentals has you covered.
+                </p>
+                <h4>Open DAILY from 8am - 5pm</h4>
+                <h5>Reserve online, call, or come on by!</h5>
+                <div>
+                    <a class="btn btn-primary" href="./reservations.html">Reservations</a>
+                    <a class="btn btn-primary" href="./contact.html">Contact</a>
+                </div>
+            </section>
+
+            <section class="home-rides-info">
+                <h2 class="separator">Choose Your Ride</h2>
+                <div class="card-container">
+                    <article class="card">
+                        <img src="./images/rentals/honda-metro-blue.webp" alt="honda-metro" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Honda Metro Scooter</h3>
+                            <p>Honda Metropolitan (49cc) - 1 person</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/rentals/honda-dio-black1.webp" alt="honda-dio" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Honda Dio Scooter</h3>
+                            <p>Honda Dio (110cc) - 2 person</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/rentals/honda-pcx150-white.webp" alt="honda-pcx" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Honda PCX150 Scooter</h3>
+                            <p>Honda PCX150 (149cc) - 2 person</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/rentals/honda-pioneer-green-4.webp" alt="honda-pioneer" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Honda Pioneer ATV</h3>
+                            <p>Honda Pioneer 1000 - 4 person</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/rentals/wrangler-red-2.webp" alt="jeep-2-door" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Jeep Wrangler - 2 door</h3>
+                            <p>Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/rentals/wrangler-yellow-4.webp" alt="jeep-4-door" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Jeep Wrangler - 4 door</h3>
+                            <p>Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <article class="reservations-banner banner-two">
+                <div>
+                    <h2 class="">Choose an Hourly or Multi-Day Rental</h2>
+                    <p>
+                        Whether you are in Cozumel for 2 hours or 7 days, you can get an option to choose an hourly or daily rental option so you can
+                        enjoy the flexibility of exploring the island however you want.
+                    </p>
+                    <a class="btn btn-primary" href="./reservations.html">Reservations</a>
+                </div>
+
+                <img src="./images/heros/scooter_rental_cozumel.webp" alt="scooter rental guy" width="400" height="auto" loading="lazy" />
+            </article>
+
+            <section class="places-info">
+                <h2 class="separator">Choose Your Destination</h2>
+                <div class="card-container">
+                    <article class="card">
+                        <img src="./images/places/punta-sur-park.webp" alt="punta-sur-park" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Punta Sur Eco Beach Park</h3>
+                            <p>If you're a wildlife lover, a trip to the Punta Sur Eco Park is a must.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/places/san_gervasio.webp" alt="san_gervasio" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>San Gervasio Ruins</h3>
+                            <p>
+                                Mayan women used to visit this shrine in central Cozumel to pay tribute to the goddess of love and fertility, Ixchel.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/places/celarain-lighthouse.webp" alt="celarain-lighthouse" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Celarain Lighthouse</h3>
+                            <p>Celarain Lighthouse is a restored lighthouse-turned-museum that’s located within Punta Sur Eco Beach Park</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/places/museo-de-cozumel.webp" alt="museo-de-cozumel" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>El Museo de la Isla de Cozumel</h3>
+                            <p>If you want to learn more about Cozumel's history, check out this excellent museum in downtown San Miguel.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/places/snorkel-playa-cielo.webp" alt="snorkeling" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Snorkel Playa El Cielo</h3>
+                            <p>
+                                Off the southern coast of the island is a beach called Playa El Cielo, famous for the thousands of underwater starfish
+                                scattered across the fine white sand.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/places/los-cinco-soles.webp" alt="los-cinco-soles" width="300" height="auto" loading="lazy" />
+                        <div class="card-body">
+                            <h3>Los Cinco Soles</h3>
+                            <p>
+                                Los Cinco Soles is at the far end of downtown and widely considered to have the best selection of handcrafts, silver,
+                                and naturally grown vanilla.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <article class="reservations-banner banner-one">
+                <div>
+                    <h2 class="">Choose an Hourly or Multi-Day Rental</h2>
+                    <p>
+                        Whether you are in Cozumel for 2 hours or 7 days, you can get an option to choose an hourly or daily rental option so you can
+                        enjoy the flexibility of exploring the island however you want.
+                    </p>
+                    <a class="btn btn-primary" href="./reservations.html">Reservations</a>
+                </div>
+                <img src="./images/heros/scooter_rental_cozumel.webp" alt="scooter rental guy" width="400" height="auto" loading="lazy" />
+            </article>
+        </main>
+        <!-- /End Content -->
+        <!-- Footer  -->
+        <footer>
+            <section>
+                <div class="footer-title">
+                    <img src="images/logo.svg" alt="Scooter Logo" width="60" height="60" loading="lazy" />
+                    <h2>Scoots Rentals</h2>
+                </div>
+                <div class="address-block">
+                    <h3>Contact</h3>
+                    <div class="address">
+                        <address>
+                            <div class="address-title">Scoots @ Playa del Carmen-Cozumel</div>
+                            <div class="address-group">
+                                <span class="label" aria-hidden="true">
+                                    <img src="images/svg/map-icon.svg" alt="map icon" width="18" height="48" loading="lazy" />
+                                </span>
+                                <div class="street">
+                                    <p>5 Ave N Entre Calle 2</p>
+                                    <p>77600 Cozumel, Q.R. Mexico</p>
+                                </div>
+                            </div>
+
+                            <a href="tel:+525558691234" target="_self">
+                                <span class="label" aria-hidden="true">
+                                    <img src="images/svg/phone-icon.svg" alt="phone icon" width="22" height="18" loading="lazy" />
+                                </span>
+                                <span class="value">+52 555 869 1234</span>
+                            </a>
+                        </address>
+
+                        <address>
+                            <div class="address-title">Scoots @ Puerta Maya</div>
+                            <div class="address-group">
+                                <span class="label" aria-hidden="true"
+                                    ><img src="images/svg/map-icon.svg" alt="map icon" width="18" height="48" loading="lazy" />
+                                </span>
+                                <div class="street">
+                                    <p>5 Ave N Entre Calle 2</p>
+                                    <p>77600 Cozumel, Q.R. Mexico</p>
+                                </div>
+                            </div>
+                            <a href="tel:+525559695678">
+                                <span class="label" aria-hidden="true"
+                                    ><img src="images/svg/phone-icon.svg" alt="phone icon" width="22" height="18" loading="lazy" />
+                                </span>
+                                <span class="value">+52 555 969 5678</span>
+                            </a>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="logo-block">
+                    <img src="images//favicons/motorcycle.webp" alt="Scooter Logo" width="150" height="150" loading="lazy" />
+                    <p>Where every ride is an adventure waiting to happen!</p>
+                    <a class="btn btn-secondary" href="./rentals.html">View Rentals</a>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul class="">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./rentals.html">Rentals</a></li>
+                        <li><a href="./reservations.html">Reservations</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="legal">
+                    <div class="">
+                        <span
+                            ><span id="cYear">&copy;</span> Scoots Rentals | Vern Wolfley | WDD 230 Final Project |
+                            <a href="./attributions.html">Attribution</a></span
+                        >
+                    </div>
+                    <div class="">
+                        <span id="lastModified"></span>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- /Footer  -->
+        <!-- Scripts -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/weather.js"></script>
+    </body>
+</html>

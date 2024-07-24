@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Cozumel Motor Rentals - Reservations</title>
+    <meta name="author" content="Ryan Lloyd">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Scoots Motor Scooter Rentals</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rental-agreement">
+            <h2>Rental Agreement</h2>
+            <p>A $50 security deposit is required to confirm reservations.</p>
+            <p>A valid driver's license is required in hand at the time of rental.</p>
+            <p>No one under the age of 12 years of age is allowed to ride on the scooters.</p>
+            <p>Fuel charge is not included.</p>
+            <p>Unlimited mileage.</p>
+            <p>Liability insurance is included.</p>
+            <p>Damage insurance is available for purchase.</p>
+            <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+            <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</p>
+            <p>Rentals may be returned to either physical location.</p>
+        </section>
+
+        <section class="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form action="submit_reservation.php" method="post">
+                <label for="date">Rental Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="period">Rental Period:</label>
+                <select id="period" name="period" required>
+                    <option value="half-day">Half Day</option>
+                    <option value="full-day">Full Day</option>
+                </select>
+
+                <label for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type" required>
+                    <option value="honda-metro">Honda Metropolitan (49cc)</option>
+                    <option value="honda-dio">Honda Dio (110cc)</option>
+                    <option value="honda-pcx150">Honda PCX150 (149cc)</option>
+                    <option value="honda-pioneer">Honda Pioneer 1000</option>
+                    <option value="jeep-wrangler-4">Jeep Wrangler - 4 door</option>
+                    <option value="jeep-wrangler-2">Jeep Wrangler - 2 door</option>
+                </select>
+
+                <label for="number">Number of Rentals:</label>
+                <input type="number" id="number" name="number" min="1" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="home-state">Home State/Country:</label>
+                <input type="text" id="home-state" name="home-state" required>
+
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line">
+
+                <label for="special">Special Accommodations/Comments:</label>
+                <textarea id="special" name="special"></textarea>
+
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Scoots Motor Scooter Rentals</p>
+        <a href="rentals.html">  Rental Options  |</a>
+        <a href="reservations.html">  Reserve Today  |</a> 
+        <a href="contact.html">  Contact Us  |</a>
+    </footer>
+</body>
+</html>
