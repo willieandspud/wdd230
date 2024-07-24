@@ -27,10 +27,10 @@ const displayRatesTable = (rentals) => {
         row.innerHTML = `
             <td>${type.type}</td>
             <td>${type.persons}</td>
-            <td>$${type.reservation_full_day}</td>
             <td>$${type.reservation_half_day}</td>
-            <td>$${type.walk_in_full_day}</td>
+            <td>$${type.reservation_full_day}</td>
             <td>$${type.walk_in_half_day}</td>
+            <td>$${type.walk_in_full_day}</td>
         `;
         priceTable.appendChild(row);
     });
