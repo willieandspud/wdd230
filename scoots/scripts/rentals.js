@@ -1,7 +1,3 @@
-/* ****************************************************
-    Rental Data and Details
-***************************************************** */
-
 const dataURL = "https://willieandspud.github.io/wdd230/scoots/data/rentals.json";
 
 async function getRentalData() {
