@@ -1093,7 +1093,7 @@ fieldset label.top textarea:required:valid {
     justify-content: center;
     font-size: 0.8rem;
     line-height: 1rem;
-    background-color: #c7d2fe;
+    background-color: #a8d0fa;
     color: var(--text-color-header);
 }
 .weather {
