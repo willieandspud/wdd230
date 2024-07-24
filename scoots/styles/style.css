@@ -492,7 +492,7 @@ footer section {
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-image: ("../images/hero-jeep.webp");
+    background-image: url("../images/hero-jeep.webp");
 }
 
 @media (min-width: 640px) {
