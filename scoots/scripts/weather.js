@@ -1,96 +1,141 @@
-const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("#fig1");
-const currentHumidity = document.querySelector("#fig2");
-const city = document.querySelector("#weather-city");
+// https://openweathermap.org/current
+// https://openweathermap.org/weathermap
 
-const forecastTemp1 = document.querySelector("#forecast-temp-1");
-const weatherIcon1 = document.querySelector("#weather-icon1");
-const captionDesc1 = document.querySelector("#fig3");
-const forecastday1 = document.querySelector("#forecast-day-1");
-const maxTemp = document.querySelector("#max-temp");
+const apiKey = "0aec6412eede92415f476e7030db63f4";
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=20.48&lon=-86.93&appid=82b9407b7b6d113e077d354c4b29fe74&units=metric`;
-const url1 = `https://api.openweathermap.org/data/2.5/forecast?lat=20.48&lon=-86.93&appid=82b9407b7b6d113e077d354c4b29fe74&units=metric`;
+// Cozumel, Mexico
+const lat = 20.512992206946528;
+const lon = -86.93069161251013;
 
-async function weatherapiFetch() {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data); //Testing only
-      displayResults(data); // uncomment when ready
-    } else {
-      throw Error(await response.text());
+const urlOpenWeather = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude={hourly,minutely,alerts}&appid=${apiKey}`;
+
+async function apiFetchOpenWeather(url) {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            // console.log(data);
+            displayOneCallResults(data);
+        } else {
+            throw new Error(await response.text());
+        }
+    } catch (error) {
+        console.error(error);
     }
-  } catch (error) {
-    console.log(error);
-  }
+}
+apiFetchOpenWeather(urlOpenWeather);
+
+function displayOneCallResults(data) {
+    // console.log(data);
+    const results = data.daily;
+    const weatherBanner = document.querySelector(".weather-container");
+    const weather = document.createElement("div");
+    weather.classList.add("weather");
+    const weatherGroup = document.querySelector(".weatherGroup");
+
+    // Current day high temperature
+    const dailyHigh = document.querySelector(".tempHigh");
+    dailyHigh.innerHTML = Math.round(results[0].temp.max);
+
+    // Current temperature
+    const currentTemp = Math.round(data.current.temp);
+    // Current humidity
+    const currentHumidity = data.current.humidity;
+    // Current weather description
+    const currentDescription = data.current.weather[0].description;
+    // Current weather icon
+    const currentIcon = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`;
+
+    weather.innerHTML = `
+    <article class="weatherGroup">
+    <span>
+        <div>Currently</div>
+            <div class="temp-day">
+            <div class="tempDiv"><span><img src=${currentIcon} alt=${currentDescription}></span><span>${currentDescription}</span></div>
+            <div class="temp-group">
+                <span>${currentTemp}&deg;F</span>
+                <span>${currentHumidity}%</span>
+            </div>
+        </div>
+    </span>
+</article>
+`;
+    weatherBanner.appendChild(weather);
+
+    // Filter the results to get the next 5 days
+    const dailyResults = results.slice(1, 5);
+
+    dailyResults.forEach((day) => {
+        const timestamp = day.dt * 1000;
+        let weekday = dayOfTheWeek(timestamp);
+
+        // Future temperature
+        const futureTemp = Math.round(day.temp.day);
+        // Future humidity
+        const futureHumidity = day.humidity;
+        // Future weather description
+        const futureDescription = day.weather[0].description;
+        // Future weather icon
+        const futureIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
+
+        const futureDay = document.createElement("article");
+        futureDay.classList.add("weatherGroup");
+
+        futureDay.innerHTML = `
+    <span>
+        <div>${weekday}</div>
+            <div class="temp-day">
+                <div class="tempDiv"><span><img src=${futureIcon} alt=${futureDescription}></span><span>${futureDescription}</span></div>
+                <div class="temp-group">
+                        <span>${futureTemp}&deg;F</span>
+                        <span>${futureHumidity}%</span>
+                    </div>
+            </div>
+    </span>
+`;
+        weather.appendChild(futureDay);
+        weatherBanner.appendChild(weather);
+    });
 }
 
-function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description;
-  weatherIcon.setAttribute("src", iconsrc);
-  weatherIcon.setAttribute("alt", "weather icon");
-  captionDesc.textContent = `${desc}`;
-  currentHumidity.innerHTML = `${data.main.humidity}%`;
-  city.innerHTML = `${data.name}, ${data.sys.country}`;
-  maxTemp.innerHTML = `${data.main.temp_max.toFixed(1)}&deg;C`;
+function dayOfTheWeek(timestamp) {
+    const options = {
+        weekday: "long",
+    };
+    const date = new Date(timestamp);
+    return date.toLocaleDateString("en-US", options);
 }
 
-async function forecastapiFetch() {
-  try {
-    const response = await fetch(url1);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data); //Testing only
-      displayForecast(data); // uncomment when ready
-    } else {
-      throw Error(await response.text());
-    }
-  } catch (error) {
-    console.log(error);
-  }
+function dateFormate(timestamp) {
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+        hour12: false,
+        timeZone: "America/Phoenix",
+        timeZoneName: "short",
+    };
+    const date = new Date(timestamp);
+    return date.toLocaleDateString("en-US", options);
 }
 
-function displayForecast(data) {
-  forecastTemp1.innerHTML = `${data.list[4].main.temp.toFixed(1)}&deg;C`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.list[6].weather[0].icon}.png`;
-  let desc1 = data.list[6].weather[0].description;
-  weatherIcon1.setAttribute("src", iconsrc);
-  weatherIcon1.setAttribute("alt", "weather icon");
-  captionDesc1.textContent = `${desc1}`;
+// ********* Weather Banner *********
+function weatherBanner() {
+    const banner = document.getElementById("banner");
+    const closeBannerBtn = document.getElementById("closeBanner");
+
+    // // Set initial visibility
+    const isBannerVisible = true;
+    banner.classList.toggle("banner", isBannerVisible);
+    banner.classList.toggle("banner-hide", !isBannerVisible);
+
+    // Close the banner when the close button is clicked
+    closeBannerBtn.addEventListener("click", function () {
+        banner.classList.add("banner-hide");
+    });
 }
-
-function forecastdates() {
-  const daysOfWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
-  const currentDate = new Date();
-  const todayIndex = currentDate.getDay();
-
-  forecastday1.innerHTML = `${daysOfWeek[(todayIndex + 1) % 7]}`;
-}
-
-function closeBanner() {
-  const banner = document.getElementById("announcementBanner");
-  banner.style.display = "none";
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  const banner = document.getElementById("announcementBanner");
-  banner.style.display = "flex";
-});
-
-weatherapiFetch();
-forecastapiFetch();
-forecastdates();
+weatherBanner();
