@@ -1,11 +1,11 @@
 @font-face {
     font-family: "NHL Edge Buffalo";
-    src: url('https://raw.githubusercontent.com/willieandspud/wdd230/scoots/fonts/NHLETor_.woff') format('woff');
+    src: url('https://raw.githubusercontent.com/willieandspud/wdd230/main/scoots/fonts/NHLETor_.woff') format('woff');
   }
   
   @font-face {
     font-family: "Helvetica Neue Roman 55";
-    src: url('https://raw.githubusercontent.com/willieandspud/wdd230/scoots/fonts/helveticaneue-roman.woff') format('woff');
+    src: url('https://raw.githubusercontent.com/willieandspud/wdd230/main/scoots/fonts/helveticaneue-roman.woff') format('woff');
   }
 
 :root {
