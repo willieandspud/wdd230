@@ -203,7 +203,7 @@ footer {
     align-content: center;
     padding: 3%;
     transition: 0.2s ease-in-out;
-    background-color: var(--primary-color:);
+    background-color: var(--primary-color);
   }
   footer a {
     color: black;
@@ -655,7 +655,6 @@ fieldset div {
 fieldset label.top input,
 fieldset label.top textarea,
 fieldset label.top select {
-    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
