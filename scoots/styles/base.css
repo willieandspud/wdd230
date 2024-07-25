@@ -43,9 +43,6 @@
     --zebra: hsl(0, 0%, 93%, 1);
 }
 
-/* *********************************
-    Site Styles
-************************************ */
 html,
 body {
     margin: 0;
@@ -62,10 +59,8 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3
+{
     font-family: var(--heading-font);
     font-style: normal;
 }
@@ -134,13 +129,10 @@ header a {
 }
 header a:hover,
 .active-page:hover {
-    /* background-color: var(--primary-color); */
-    /* color: var(--text-color-secondary); */
     color: #976629;
     font-weight: 900;
 }
 .active-page {
-    /* color: var(--text-color-secondary); */
     color: #d9923b;
     font-weight: 900;
 }
@@ -818,7 +810,7 @@ fieldset label.top textarea:required:valid {
 
 /* Banner ^ */
 
-/* Pricing Table */
+/* Pricing */
 .pricing {
     display: flex;
     justify-content: center;
