@@ -1,137 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cozumel Motor Rentals | Scoots</title>
-        <meta name="author" content="Ryan Lloyd">
-        <meta name="description" content="Experience the best of Cozumel, in the best way possible. Scooter, ATV, and Jeep rentals, that combine style and performance for a day at Cozumel you'll never forget.">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <meta property="og:title" content="Scoots - Cozumel Rental Services">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://willieandspud.github.io/wdd230/scoots/images/favicon.ico">
-        <meta property="og:url" content="https://willieandspud.github.io/wdd230/">
-    
-    </head>
-    <body>
-        <article id="banner">
-            <h2>Today's high will be: <span class="tempHigh"></span> &deg;F</h2>
-            <button type="button" id="closeBanner" aria-label="Close banner">❌</button>
-        </article>
-        <header class="nav">
-            <div class="nav-brand">
-                <img src="images/scooter-icon.svg" alt="Scoots logo" width="60" height="60" loading="lazy" />
-                <h1 id="nav-title">Scoots Rentals</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozumel Motor Rentals | Scoots</title>
+    <meta name="author" content="Ryan Lloyd">
+    <meta name="description" content="Experience the best of Cozumel, in the best way possible. Scooter, ATV, and Jeep rentals, that combine style and performance for a day at Cozumel you'll never forget.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Scoots - Cozumel Rental Services">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://willieandspud.github.io/wdd230/scoots/images/favicon.ico">
+    <meta property="og:url" content="https://willieandspud.github.io/wdd230/">
+</head>
+<body>
+    <article id="banner">
+        <h2>Today's high will be: <span class="tempHigh"></span> &deg;F</h2>
+        <button type="button" id="closeBanner" aria-label="Close banner">❌</button>
+    </article>
+    <header class="nav">
+        <div class="nav-brand">
+            <img src="images/scooter-icon.svg" alt="Scoots logo" width="60" height="60" loading="lazy">
+            <h1 id="nav-title">Scoots Rentals</h1>
+        </div>
+        <div class="nav-box">
+            <div class="nav-info">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="./index.html" class="active-page">Home</a></li>
+                        <li><a href="./rentals.html">Rentals</a></li>
+                        <li><a href="./reservations.html">Reservations</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="nav-box">
-                <div class="nav-info">
-                    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-                    <nav class="nav-links">
-                        <ul>
-                            <li><a href="./index.html" class="active-page">Home</a></li>
-                            <li><a href="./rentals.html">Rentals</a></li>
-                            <li><a href="./reservations.html">Reservations</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook image"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="Instagram image"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.webp" alt="Twitter image"></a>
+        </div>
+    </header>
+    <main>
+        <div class="weather-container"></div>
+        <div class="hero-section">
+            <div class="hero-container">
+                <div class="hero-info">
+                    <section>
+                        <h2>
+                            <span>Explore more of Cozumel with Scoots!</span>
+                        </h2>
+                        <p>Scooter, ATV & Jeep Rentals</p>
+                        <a class="btn btn-primary" href="./rentals.html">Make a reservation now!</a>
+                    </section>
                 </div>
             </div>
-            <div class="socialMedia">
-                <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook image"></a> 
-                <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="Instagram image"></a>
-                <a href="=https://twitter.com/"><img src="images/twitter.webp" alt="Twitter image"></a>
-            </div>
-        </header>
-        <main>
-            <div class="weather-container"></div>
-            <div class="hero-section">
-                <div class="hero-container">
-                    <div class="hero-info">
-                        <section>
-                            <h2>
-                                <span>Explore more of Cozumel with Scoots!</span>
-                            </h2>
-                            <p>Scooter, ATV & Jeep Rentals</p>
-
-                            <a class="btn btn-primary" href="./rentals.html">Make a reservation now!</a>
-                        </section>
-                    </div>
-                </div>
-                <div class="hero-image"></div>
-            </div>
-            <section class="home-info">
-                <h2>Ready to Ride?</h2>
-                <p>
-                    Don't wait until you arrive to start planning your Cozumel adventure.
-                    Browse our rental options, check out our rates, and reserve your vehicle today. 
-                    Whether you're looking to explore the island solo or with a group, Scoots is your ticket to an unforgettable journey.
-                </p>
-                <div>
-                    <a class="btn btn-primary" href="./reservations.html">Reservations</a>
-                    <a class="btn btn-primary" href="./contact.html">Contact</a>
-                </div>
-            </section>
-
-            <section class="home-rides-info">
-                <h2>Rental Options</h2>
-                <div class="card-container">
-                    <article class="card">
-                        <img src="./images/honda_metro.webp" alt="Honda Metro" width="300" height="auto" loading="lazy" />
-                        <div class="card-body">
-                            <h3>Honda Metro Scooter</h3>
-                            <p>1 person</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img src="./images/honda_dio.webp" alt="Honda Dio" width="300" height="auto" loading="lazy" />
-                        <div class="card-body">
-                            <h3>Honda Dio Scooter</h3>
-                            <p>2 person</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img src="./images/honda_pcx150.webp" alt="Honda PCX" width="300" height="auto" loading="lazy" />
-                        <div class="card-body">
-                            <h3>Honda PCX150 Scooter</h3>
-                            <p>2 person</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img src="./images/honda_pioneer.webp" alt="Honda Pioneer" width="300" height="auto" loading="lazy" />
-                        <div class="card-body">
-                            <h3>Honda Pioneer ATV</h3>
-                            <p>4 person</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img src="./images/jeep2.webp" alt="Jeep 2 door" width="300" height="auto" loading="lazy" />
-                        <div class="card-body">
-                            <h3>Jeep Wrangler - 2 door</h3>
-                            <p>4 person</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img src="./images/jeep4.webp" alt="Jeep 4 door" width="300" height="auto" loading="lazy" />
-                        <div class="card-body">
-                            <h3>Jeep Wrangler - 4 door</h3>
-                            <p>5 person</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <footer>
+            <div class="hero-image"></div>
+        </div>
+        <section class="home-info">
+            <h2>Ready to Ride?</h2>
+            <p>
+                Don't wait until you arrive to start planning your Cozumel adventure.
+                Browse our rental options, check out our rates, and reserve your vehicle today.
+                Whether you're looking to explore the island solo or with a group, Scoots is your ticket to an unforgettable journey.
+            </p>
             <div>
-                &copy; <span id="copyrightYear"></span> | Ryan Lloyd |
-                <a href="rentals.html">About  |</a>
-                <a href="contact.html">Contact  |</a>
-                <a href="reservations.html">Reserve  |</a>  
+                <a class="btn btn-primary" href="./reservations.html">Reservations</a>
+                <a class="btn btn-primary" href="./contact.html">Contact</a>
             </div>
-        </footer>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/weather.js"></script>
-    </body>
+        </section>
+        <section class="home-rides-info">
+            <h2>Rental Options</h2>
+            <div class="card-container">
+                <article class="card">
+                    <img src="./images/honda_metro.webp" alt="Honda Metro" width="300" loading="lazy">
+                    <div class="card-body">
+                        <h3>Honda Metro Scooter</h3>
+                        <p>1 person</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/honda_dio.webp" alt="Honda Dio" width="300" loading="lazy">
+                    <div class="card-body">
+                        <h3>Honda Dio Scooter</h3>
+                        <p>2 person</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/honda_pcx150.webp" alt="Honda PCX" width="300" loading="lazy">
+                    <div class="card-body">
+                        <h3>Honda PCX150 Scooter</h3>
+                        <p>2 person</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/honda_pioneer.webp" alt="Honda Pioneer" width="300" loading="lazy">
+                    <div class="card-body">
+                        <h3>Honda Pioneer ATV</h3>
+                        <p>4 person</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/jeep2.webp" alt="Jeep 2 door" width="300" loading="lazy">
+                    <div class="card-body">
+                        <h3>Jeep Wrangler - 2 door</h3>
+                        <p>4 person</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/jeep4.webp" alt="Jeep 4 door" width="300" loading="lazy">
+                    <div class="card-body">
+                        <h3>Jeep Wrangler - 4 door</h3>
+                        <p>5 person</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="copyrightYear"></span> | Ryan Lloyd |
+            <a href="rentals.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="reservations.html">Reserve |</a>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
 </html>
